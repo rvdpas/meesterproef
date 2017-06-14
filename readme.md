@@ -7,8 +7,8 @@ To get this application working on your system, please follow the steps as descr
 ### Prerequisites
 
 ```
-Installed node  
-A code editor  
+- Installed node  
+- A code editor  
 ```
 
 ### Installing
@@ -43,11 +43,8 @@ localhost:3000
 * [NodeJS](https://nodejs.org/en/) 
 * [Socket.io](https://socket.io/) 
 
-## Feature list
+## Feature list  
 
-- [ ] Mercury
-- [ ] Mercury
-- [ ] Mercury
-- [ ] Mercury
-- [ ] Mercury
-- [ ] Mercury
+## Planning
+
+[Trello](https://trello.com/b/lavTOTYF) 
