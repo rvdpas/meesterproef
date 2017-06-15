@@ -2,12 +2,10 @@
 
     <% include partials/interests.ejs %>
 
-    <section class="msg-window">
-        <ul id="messages"></ul>
-        <form id="sendform" action="">
-            <input id="send" autocomplete="off">
-            <button>Send</button>
-        </form>
-    </section>
+    <% storydata.stories.forEach(function (story) {%>
+        <div><%= story.storyTitle %></div>
+        <div><%= story.storyImage %></div>
+        <div><%= story.storyText %></div>
+    <% }); %>
 
 <% include partials/footer.ejs %>

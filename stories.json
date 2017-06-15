@@ -1,5 +1,6 @@
 {
-    "stories":[
+    "categoryName": "This is the Category Name",
+    "stories": [
         {
             "storyTitle": "this is the story title",
             "storyImage": "this is the story image",
