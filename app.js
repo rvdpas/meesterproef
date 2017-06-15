@@ -2,6 +2,7 @@ var express = require('express');
 var http = require('http');
 var bodyParser = require('body-parser');
 var path = require('path');
+var fs = require('fs');
 var compression = require('compression');
 var socketio = require('socket.io');
 
@@ -11,6 +12,11 @@ var io = socketio.listen(server);
 
 users = [];
 connections = [];
+
+var data = fs.readFileSync('stories.json');
+var stories = JSON.parse(data);
+
+console.log(stories);
 
 server.listen(3000, function() {
   console.log("Server started on port 3000...");
