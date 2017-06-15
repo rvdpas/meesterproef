@@ -1,28 +1,6 @@
 <% include partials/header %>
 
-    <section class="interests">
-        <h1>Welke items vind je interessant?</h1>
-        <ul>
-            <li>
-                <input type="checkbox" name="interest" value="Technologie">
-                <label for="interest">Technologie</label>
-            </li></li>
-            <li>
-            <input type="checkbox" name="interest" value="Wetenschap">
-                <label for="interest">Wetenschap</label>
-            </li></li>
-            <li>
-                <input type="checkbox" name="interest" value="Natuur">
-                <label for="interest">Natuur</label>
-            </li></li>
-            <li>
-                <input type="checkbox" name="interest" value="Onderwijs">
-                <label for="interest">Onderwijs</label>
-            </li>
-        </ul>
-
-        <input type="button" id="getInterests" value="Get Values" />
-    </section>
+    <% include partials/interests.ejs %>
 
     <section class="msg-window">
         <ul id="messages"></ul>
