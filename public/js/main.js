@@ -43,7 +43,10 @@
 document.getElementById("getInterests").addEventListener("click", recieveInterests);
 
 function recieveInterests() {
-    alert(getCheckedCheckboxesFor('interest'));
+  var interests = document.querySelectorAll(".hide");
+  [].forEach.call(interests, function(el) {
+    el.classList.remove("hide");
+});
 }
 
 function getCheckedCheckboxesFor(checkboxName) {

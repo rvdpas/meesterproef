@@ -1,10 +1,7 @@
 <% include partials/header %>
 
     <% include partials/interests.ejs %>
-
-    <% storydata.stories.forEach(function (story) {%>
-        <div><%= story.storyTitle %></div>
-        <div><%= story.storyText %></div>
-    <% }); %>
+    <% include partials/technology.ejs %>
+    <% include partials/science.ejs %>
 
 <% include partials/footer.ejs %>
