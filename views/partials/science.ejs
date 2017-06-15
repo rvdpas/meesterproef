@@ -1,6 +1,8 @@
     <% storydata.science.forEach(function (story) {%>
-        <article class="science-story">
+        <article class="science-story hide">
             <h1><%= story.storyTitle %></h1>
+            <i class="fa fa-flask" aria-hidden="true"></i><span>Wetenschap</span>
+            <i class="fa fa-pencil" aria-hidden="true"></i><%= story.writer %></span>
             <p><%= story.storyIntro %></p>
         </article>
     <% }); %>

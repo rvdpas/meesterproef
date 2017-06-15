@@ -3,12 +3,14 @@
     "technology": [
         {
             "_source": "http://www.nu.nl/gadgets/4006357/grootste-ontwikkelingen-rondom-virtual-reality.html",
+            "writer": "Marcel Vroegrijk",
             "storyTitle": "De grootste ontwikkelingen rondom virtual reality",
             "storyIntro": "Het enthousiasme rondom virtual reality beleefde afgelopen week een piek. De nog altijd prille markt voor dit stukje techniek kreeg er in slechts een paar dagen plots meerdere nieuwe spelers bij. De relatief oudgedienden presenteerden op hun beurt nieuwere versies van eerder onthulde brillen. We zetten de grootste ontwikkelingen voor u op een rij.",
             "storyText": "Sony onthulde tijdens de Game Developers Conference (GDC) begin vorige week zijn verbeterde Project Morpheus-prototype. Met een hoge beeldverversing en verrassend comfortabel ontwerp is de boodschap duidelijk: Sony’s bril is bedoeld als een verlengde van je Playstation 4 en moet garant staan het meeste spelplezier. Dat is ook gelijk het nadeel van Project Morpheus. Het accessoire is onlosmakelijk verbonden aan Sony’s meest recente spelcomputer. De potentiële afzetmarkt is daarom een stuk kleiner dan die van concurrenten. Het Japanse bedrijf ziet in die afhankelijkheid zelf juist een voordeel: omdat ieder PS4-exemplaar vrijwel identiek is, krijgt iedere consument ook een virtual reality-ervaring van dezelfde kwaliteit. Hoeveel games er vanaf de lancering zullen zijn, is nog wat onduidelijk. Er zijn nog maar weinig concrete spellen voor Project Morpheus aangekondigd. Sony en andere partijen hebben gelukkig nog een jaar: de bril moet ergens in de eerste helft van 2016 in de winkels liggen. Qua ontwerp voelt Project Morpheus nu al af: het accessoire ziet er stijlvol uit en zit bijna verdacht prettig."
         },
         {
             "_source": "http://www.nu.nl/gadgets/4770549/zelflerende-robot-speelt-eigen-muziek-marimba.html",
+            "writer": "Rob van der Pas",
             "storyTitle": "Zelflerende robot speelt eigen muziek op marimba ",
             "storyIntro": "Zelflerende robot Shimon heeft vijfduizend nummers en twee miljoen motieven, riffs en meer geanalyseerd en kan nu eigen muziek maken op zijn marimba.",
             "storyText": "Shimon is een project van onderzoeker Mason Bretan van het Georgia Tech Center for Music Technology, meldt IEEE Spectrum. De robot heeft vijfduizend nummers van onder meer Beethoven, The Beatles, Lady Gaga, Miles Davis en John Coltrane beluisterd, en meer dan twee miljoen motieven, riffs, licks en andere basiselementen uit de muziek. Daarvan heeft Shimon bijvoorbeeld geleerd welke patronen vaak terugkomen in muziek, welke noot er het beste als volgende in een reeks past en hoe hij akkoorden en en harmonieën moet maken. Belangrijker nog is dat de robot zich kan richten op de overkoepelende structuur van de muziek."
@@ -17,12 +19,14 @@
     "science": [
         {
             "_source": "http://www.nu.nl/wetenschap/4770615/china-lanceert-eerste-rontgentelescoop.html",
+            "writer": "Frank Warnaar",
             "storyTitle": "China lanceert zijn eerste röntgentelescoop",
             "storyIntro": "China heeft donderdag zijn eerste röntgentelescoop de ruimte ingestuurd. De lancering vond plaats vanaf de lanceerbasis in Jiuquan in de Gobiwoestijn, ",
             "storyText": "Dat meldt het nationale persbureau Xinhua. De 2500 kilo zware Hard X-ray Modulation Telescope (HXMT)-telescoop, die de bijnaam Insight heeft gekregen, gaat 550 kilometer boven de aarde informatie verzamelen over zwarte gaten, pulsars en uitbarstingen van gammastraling. De onderzoekers hopen meer te weten te komen over de evolutie van zwarte gaten en sterke magnetische velden. China heeft zijn ruimteprogramma de laatste jaren flink uitgebreid. Voor 2020 staat een onbemande missie naar Mars gepland en over vijftien tot twintig jaar moet de eerstse Chinees op de maan landen.t"
         },
         {
             "_source": "http://www.nu.nl/wetenschap/4769388/plankton-zorgt-turquoise-water-in-bosporus--.html",
+            "writer": "John Doe",
             "storyTitle": "Plankton zorgt voor turquoise water in Bosporus",
             "storyIntro": "De plotselinge toename van plankton heeft ervoor gezorgd dat het water van de Bosporus turquoise is gekleurd.",
             "storyText": "Dat zeggen wetenschappers. De toename van de waterorganismen in de gehele Zwarte Zee is volgens hen de oorzaak van de kleurverandering. De Bosporus, de zeestraat die Istanbul scheidt in het Europese en Aziatische gedeelte, verbindt de Zwarte Zee met de Zee van Marmara, die binnenzee leidt uiteindelijk naar de Middellandse Zee. De inwoners van Istanbul schrokken afgelopen weekend toen de kleur van de Bosporus van blauw naar melkachtig turquoise veranderde."

@@ -7,16 +7,23 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 18px;
 }
 
 body {
   width: 40em;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 0.5em;
+  margin-top: 0.2em;
+  display: block;
 }
 
 .user-window {
@@ -91,6 +98,18 @@ body {
 
     li {
       list-style: none;
+      padding: 2em 0;
+      border: 1px solid #333;
+      text-align: center;
+      width: 7em;
+
+      input[type='checkbox'] {
+        display: none;
+      }
+
+      input[type=checkbox]:checked + label {
+        background: red;
+      }
     }
 
     a {
@@ -110,13 +129,31 @@ body {
   display: none;
 }
 
-.stories {
-  width: 70em;
+article {
+  margin: 1em 0;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #c1c1c1;
 
+  i {
+    margin-right: 0.2em;
+
+    &::before {
+      content: '';
+      font-size: 1em;
+    }
+  }
+
+  span {
+    font-style: italic;
+    margin-right: 0.5em;
+    margin-bottom: 0.2em;
+    display: inline-block;
+  }
 }
 
 h1 {
   font-size: 2em;
   font-weight: 700;
-  line-height: 1.8;
+  line-height: 1.4;
+  margin-bottom: 0.2em;
 }
