@@ -1,17 +1,34 @@
 <% include partials/header %>
 
-    <section class="user-window">
-        <h1>Enter username</h1>
-        <form id="newuser" action="">
-            <input type="text" autofocus id="user" autocomplete="off">
-            <input type="submit" value="Add user">
-        </form>
+    <section class="interests">
+        <h1>Welke items vind je interessant?</h1>
+        <ul>
+            <li>
+                <input type="checkbox" name="interest" value="Technologie">
+                <label for="interest">Technologie</label>
+            </li></li>
+            <li>
+            <input type="checkbox" name="interest" value="Wetenschap">
+                <label for="interest">Wetenschap</label>
+            </li></li>
+            <li>
+                <input type="checkbox" name="interest" value="Natuur">
+                <label for="interest">Natuur</label>
+            </li></li>
+            <li>
+                <input type="checkbox" name="interest" value="Onderwijs">
+                <label for="interest">Onderwijs</label>
+            </li>
+        </ul>
+
+        <input type="button" id="getInterests" value="Get Values" />
     </section>
 
     <section class="msg-window">
         <ul id="messages"></ul>
         <form id="sendform" action="">
-            <input id="send" autocomplete="off"> <button>Send</button>
+            <input id="send" autocomplete="off">
+            <button>Send</button>
         </form>
     </section>
 

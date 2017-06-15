@@ -9,7 +9,6 @@ var newUser = document.querySelector('#newuser');
 
 socket.on('new message', newMsg);
 sendMessage.addEventListener('submit', sendMsg);
-newUser.addEventListener('submit', sendNewUser);
 
 function sendNewUser(e) {
   socket.emit('new user', userName.value, function(data) {
@@ -41,3 +40,16 @@ function newMsg(data) {
   document.querySelector('#messages').appendChild(li);
 }
 
+document.getElementById("getInterests").addEventListener("click", recieveInterests);
+
+function recieveInterests() {
+    alert(getCheckedCheckboxesFor('interest'));
+}
+
+function getCheckedCheckboxesFor(checkboxName) {
+    var checkboxes = document.querySelectorAll('input[name="' + checkboxName + '"]:checked'), values = [];
+    Array.prototype.forEach.call(checkboxes, function(el) {
+        values.push(el.value);
+    });
+  return values;
+}
