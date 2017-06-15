@@ -3,12 +3,10 @@
     "stories": [
         {
             "storyTitle": "this is the story title",
-            "storyImage": "this is the story image",
             "storyText": "this is the story text"
         },
         {
             "storyTitle": "this is another story title",
-            "storyImage": "this is another story image",
             "storyText": "this is another story text"
         }
     ]
