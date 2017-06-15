@@ -8,6 +8,15 @@ html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.6;
+}
+
+body {
+  width: 40em;
+  margin: 0 auto;
 }
 
 .user-window {
@@ -73,8 +82,6 @@ html, body {
 }
 
 .interests {
-  width: 40em;
-  margin: 0 auto;
 
   ul {
     display: flex;
@@ -101,4 +108,15 @@ html, body {
 
 .hide {
   display: none;
+}
+
+.stories {
+  width: 70em;
+
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.8;
 }
