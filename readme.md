@@ -1,6 +1,7 @@
 # Meesterproef - Persgroep application
 
 In this repository, you will find the code for De Persgroep application.
+De Persgroep is a leading publisher of national, regional and local news brands, magazines, websites and is active on radio. The goal of this project is to create a app for a younger group of future writers. This app will give them the chance to create content younger people enjoy based on their interests. In the app users can write and read stories they think are relevant for their target audience. The whole idea behind this that young writers get the opportunity to create the content for the young readers.
 
 ## Getting Started
 
