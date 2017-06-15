@@ -1,5 +1,7 @@
 # Meesterproef - Persgroep application
 
+In this repository, you will find the code for De Persgroep application.
+
 ## Getting Started
 
 To get this application working on your system, please follow the steps as described below.
@@ -44,6 +46,13 @@ localhost:3000
 * [Socket.io](https://socket.io/) 
 
 ## Feature list  
+
+- [ ] Generate multiple subjects for a first interest check
+- [ ] Save the users interest in a database
+- [ ] Show an overview of recommented stories
+- [ ] Add share to social media functionality
+- [ ] Follow writers
+- [ ] login form with validation
 
 ## Planning
 
