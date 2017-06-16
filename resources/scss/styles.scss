@@ -148,6 +148,10 @@ article {
   padding-bottom: 1em;
   border-bottom: 1px solid #c1c1c1;
 
+  @at-root .detail & {
+    border-bottom: none;
+  }
+
   img {
     margin-bottom: 0.5em;
     margin-top: 0.2em;

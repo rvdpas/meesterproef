@@ -28,6 +28,10 @@ app.get('/', function(req, res){
   res.render('index.ejs');
 });
 
+app.get('/detail', function(req, res){
+  res.render('detail.ejs');
+});
+
 io.sockets.on('connection', function(socket) {
   connections.push(socket);
   console.log('Connected: %s sockets connected', connections.length);

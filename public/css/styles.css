@@ -117,6 +117,8 @@ article {
   margin: 1em 0;
   padding-bottom: 1em;
   border-bottom: 1px solid #c1c1c1; }
+  .detail article {
+    border-bottom: none; }
   article img {
     margin-bottom: 0.5em;
     margin-top: 0.2em; }
