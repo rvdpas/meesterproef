@@ -40,14 +40,17 @@
 //   document.querySelector('#messages').appendChild(li);
 // }
 
-document.getElementById("getInterests").addEventListener("click", recieveInterests);
+document.getElementById("getInterests").addEventListener("click", function() {
 
-function recieveInterests() {
-  var interests = document.querySelectorAll(".hide");
-  [].forEach.call(interests, function(el) {
+  var showInterests = document.querySelectorAll(".hide");
+  [].forEach.call(showInterests, function(el) {
     el.classList.remove("hide");
+  });
+
+  var interests = document.getElementById("interests");
+  interests.classList.add("hide");
 });
-}
+
 
 function getCheckedCheckboxesFor(checkboxName) {
     var checkboxes = document.querySelectorAll('input[name="' + checkboxName + '"]:checked'), values = [];
