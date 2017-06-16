@@ -119,6 +119,10 @@ article {
   border-bottom: 1px solid #c1c1c1; }
   .detail article {
     border-bottom: none; }
+  article a {
+    display: block;
+    text-decoration: none;
+    color: inherit; }
   article img {
     margin-bottom: 0.5em;
     margin-top: 0.2em; }

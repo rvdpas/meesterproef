@@ -1,9 +1,11 @@
     <% storydata.technology.forEach(function (story) {%>
         <article class="technology-story hide">
+        <a href="/detail">
             <h1><%= story.storyTitle %></h1>
             <i class="fa fa-mobile" aria-hidden="true"></i><span>Technologie</span>
             <i class="fa fa-pencil" aria-hidden="true"></i></i><span><%= story.writer %></span>
             <img src="img/zelflerende-robot-speelt-eigen-muziek-marimba.jpg">
             <p><%= story.storyIntro %></p>
+        </a>
         </article>
     <% }); %>
