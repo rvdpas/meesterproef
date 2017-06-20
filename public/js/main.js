@@ -1,61 +1,35 @@
-// var socket = io();
-// var messageWindow = document.querySelector('.msg-window');
-// var message = document.querySelector('#send');
-// var sendMessage = document.querySelector('#sendform');
+// document.getElementById("getInterests").addEventListener("click", function() {
 
-// var newUserWindow = document.querySelector('.user-window');
-// var userName = document.querySelector('#user');
-// var newUser = document.querySelector('#newuser');
-
-// socket.on('new message', newMsg);
-// sendMessage.addEventListener('submit', sendMsg);
-
-// function sendNewUser(e) {
-//   socket.emit('new user', userName.value, function(data) {
-//     if(data) {
-//       newUserWindow.style.display = 'none';
-//       messageWindow.style.display = 'block';
-//     }
+//   var showInterests = document.querySelectorAll(".hide");
+//   [].forEach.call(showInterests, function(el) {
+//     el.classList.remove("hide");
 //   });
-//   e.preventDefault();
-//   socket.on('get users', function(data) {
-//     data.forEach(function(e) {
-//         console.log(e);
-//     })
-//   })
+
+//   var interests = document.getElementById("interests");
+//   interests.classList.add("hide");
+// });
+
+
+// function getCheckedCheckboxesFor(checkboxName) {
+//     var checkboxes = document.querySelectorAll('input[name="' + checkboxName + '"]:checked'), values = [];
+//     Array.prototype.forEach.call(checkboxes, function(el) {
+//         values.push(el.value);
+//     });
+//   return values;
 // }
 
-// function sendMsg(e) {
-//   socket.emit('send message', message.value);
-//   message.value = '';
-//   e.preventDefault();
+// function toggleClass(el) {
+//   if(el.className == "hide") {
+//     el.className = "";
+//   } else {
+//     el.className = "hide";
+//   }
 // }
 
-// function newMsg(data) {
-//   console.log(data);
-//   var li = document.createElement('li');
-//   li.className = "message";
-//   li.innerHTML = '<strong>' + data.user + '</strong>: ' + data.msg;
-
-//   document.querySelector('#messages').appendChild(li);
-// }
-
-document.getElementById("getInterests").addEventListener("click", function() {
-
-  var showInterests = document.querySelectorAll(".hide");
-  [].forEach.call(showInterests, function(el) {
-    el.classList.remove("hide");
-  });
-
-  var interests = document.getElementById("interests");
-  interests.classList.add("hide");
-});
-
-
-function getCheckedCheckboxesFor(checkboxName) {
-    var checkboxes = document.querySelectorAll('input[name="' + checkboxName + '"]:checked'), values = [];
-    Array.prototype.forEach.call(checkboxes, function(el) {
-        values.push(el.value);
-    });
-  return values;
-}
+var elem = document.getElementById('tech'),
+  checkBox = document.getElementById('check1');
+  checkBox.checked = false;
+  checkBox.onchange = function() {
+      elem.style.display = this.checked ? 'block' : 'none';
+  };
+checkBox.onchange();

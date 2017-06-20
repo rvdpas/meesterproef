@@ -116,13 +116,13 @@ img {
 
     li {
       list-style: none;
-      padding: 2em 0;
       border: 1px solid #333;
       text-align: center;
-      width: 9em;
 
       input[type='checkbox'] {
-        display: none;
+        position: absolute;
+        top: -99999;
+        left: -99999;
       }
     }
 
@@ -198,5 +198,14 @@ input[type=button] {
     background: #ff6900;
     color: #fff;
     transition: .5s ease background;
+  }
+}
+
+.checkboxWrapper {
+  label {
+    padding: 2em 0;
+    box-sizing: border-box;
+    display: block;
+    width: 9em;
   }
 }
