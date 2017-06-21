@@ -1,5 +1,4 @@
 {
-    "categoryName": "This is the Category Name",
     "technology": [
         {
             "_source": "http://www.nu.nl/gadgets/4006357/grootste-ontwikkelingen-rondom-virtual-reality.html",
@@ -12,6 +11,7 @@
         {
             "_source": "http://www.nu.nl/gadgets/4770549/zelflerende-robot-speelt-eigen-muziek-marimba.html",
             "writer": "Rob van der Pas",
+            "image": "http://media.nu.nl/m/5bdxluraplmq_wd640.jpg/zelflerende-robot-speelt-eigen-muziek-marimba.jpg",
             "storyTitle": "Zelflerende robot speelt eigen muziek op marimba ",
             "storyIntro": "Zelflerende robot Shimon heeft vijfduizend nummers en twee miljoen motieven, riffs en meer geanalyseerd en kan nu eigen muziek maken op zijn marimba.",
             "storyText": "Shimon is een project van onderzoeker Mason Bretan van het Georgia Tech Center for Music Technology, meldt IEEE Spectrum. De robot heeft vijfduizend nummers van onder meer Beethoven, The Beatles, Lady Gaga, Miles Davis en John Coltrane beluisterd, en meer dan twee miljoen motieven, riffs, licks en andere basiselementen uit de muziek. Daarvan heeft Shimon bijvoorbeeld geleerd welke patronen vaak terugkomen in muziek, welke noot er het beste als volgende in een reeks past en hoe hij akkoorden en en harmonieën moet maken. Belangrijker nog is dat de robot zich kan richten op de overkoepelende structuur van de muziek."
@@ -21,6 +21,7 @@
         {
             "_source": "http://www.nu.nl/wetenschap/4770615/china-lanceert-eerste-rontgentelescoop.html",
             "writer": "Frank Warnaar",
+            "image": "http://media.nu.nl/m/forxspcafgb7_wd640.jpg/china-lanceert-eerste-rontgentelescoop.jpg",
             "storyTitle": "China lanceert zijn eerste röntgentelescoop",
             "storyIntro": "China heeft donderdag zijn eerste röntgentelescoop de ruimte ingestuurd. De lancering vond plaats vanaf de lanceerbasis in Jiuquan in de Gobiwoestijn, ",
             "storyText": "Dat meldt het nationale persbureau Xinhua. De 2500 kilo zware Hard X-ray Modulation Telescope (HXMT)-telescoop, die de bijnaam Insight heeft gekregen, gaat 550 kilometer boven de aarde informatie verzamelen over zwarte gaten, pulsars en uitbarstingen van gammastraling. De onderzoekers hopen meer te weten te komen over de evolutie van zwarte gaten en sterke magnetische velden. China heeft zijn ruimteprogramma de laatste jaren flink uitgebreid. Voor 2020 staat een onbemande missie naar Mars gepland en over vijftien tot twintig jaar moet de eerstse Chinees op de maan landen.t"
@@ -28,6 +29,7 @@
         {
             "_source": "http://www.nu.nl/wetenschap/4769388/plankton-zorgt-turquoise-water-in-bosporus--.html",
             "writer": "John Doe",
+            "image": "http://media.nu.nl/m/wd8x4lgazqel_wd640.jpg/plankton-zorgt-turquoise-water-in-bosporus--.jpg",
             "storyTitle": "Plankton zorgt voor turquoise water in Bosporus",
             "storyIntro": "De plotselinge toename van plankton heeft ervoor gezorgd dat het water van de Bosporus turquoise is gekleurd.",
             "storyText": "Dat zeggen wetenschappers. De toename van de waterorganismen in de gehele Zwarte Zee is volgens hen de oorzaak van de kleurverandering. De Bosporus, de zeestraat die Istanbul scheidt in het Europese en Aziatische gedeelte, verbindt de Zwarte Zee met de Zee van Marmara, die binnenzee leidt uiteindelijk naar de Middellandse Zee. De inwoners van Istanbul schrokken afgelopen weekend toen de kleur van de Bosporus van blauw naar melkachtig turquoise veranderde."
@@ -35,30 +37,38 @@
     ],
     "sport": [
         {
-            "_source": "",
-            "storyTitle": "this is the story title",
-            "storyIntro": "this is the story title",
-            "storyText": "this is the story text"
+            "_source": "http://www.nu.nl/sport/4784328/dortmund-verdediger-ginter-dacht-stoppen-aanslag-spelersbus.html",
+            "writer": "John Doe",
+            "image": "http://media.nu.nl/m/3y7x111a869p_wd640.jpg/dortmund-verdediger-ginter-dacht-stoppen-aanslag-spelersbus.jpg",
+            "storyTitle": "Dortmund-verdediger Ginter dacht aan stoppen na aanslag op spelersbus",
+            "storyIntro": "Matthias Ginter heeft na de aanslag op de spelersbus van Borussia Dortmund overwogen zijn carrière te beëindigen. De verdediger was dusdanig geschrokken van het incident, maar besloot toch om door te gaan.",
+            "storyText": "Matthias Ginter heeft na de aanslag op de spelersbus van Borussia Dortmund overwogen zijn carrière te beëindigen. De verdediger was dusdanig geschrokken van het incident, maar besloot toch om door te gaan. Op 11 april ontplofte er een bom vlak naast de bus van 'BVB', die op weg was naar het stadion. Dortmund zou die dag in de kwartfinales van de Champions League in actie komen tegen AS Monaco. Het duel werd vanwege de aanslag een dag uitgesteld. 'Korte tijd heb ik er aan gedacht om te stoppen met voetballen. Je kunt je namelijk nooit voorbereiden op dit soort aanvallen', vertelt Ginter, die momenteel met Duitsland actief op de Confederations Cup in Rusland, woensdag in het Duitse magazine Die Zeit. 'Maar ik zal niet toestaan dat iemand mij ontneemt waar ik het meest van houd.' 'Toen we vertrokken, klonk er een luide knal. Vlak bij de bus explodeerde er een schijf. Er vlogen gebroken stukken glas door de lucht. We gingen allemaal zo snel mogelijk op de grond liggen. Als de bus geen extra dik glas had gehad, dan had het veel erger kunnen zijn.'"
         },
         {
-            "_source": "",
-            "storyTitle": "this is another story title",
-            "storyIntro": "this is another story title",
-            "storyText": "this is another story text"
+            "_source": "http://www.nu.nl/sport/4783767/teambaas-kaltenborn-vertrekt-per-direct-bij-sauber-.html",
+            "writer": "John Doe",
+            "image": "http://media.nu.nl/m/nu7xjihacq4x_wd640.jpg/teambaas-kaltenborn-vertrekt-per-direct-bij-sauber-.jpg",
+            "storyTitle": "'Teambaas Kaltenborn vertrekt per direct bij Sauber'",
+            "storyIntro": "Monisha Kaltenborn vertrekt met onmiddelijke ingang bij Sauber. Volgens verschillende media, waaronder Sky Sports en Motorsport.com, zou een geschil over het te voeren beleid de oorzaak zijn van de breuk.",
+            "storyText": "Kaltenborn redde vorig jaar het noodlijdende Sauber van de ondergang door in zee te gaan met investeringsmaatschappij Longbow Finance. Hoewel een faillisement werd voorkomen, bleef Sauber - met de Duitser Pascal Wehrlein en de Zweed Marcus Ericsson achter het stuur - een team in de achterhoede. De Zwitserse renstal heeft het nieuws nog niet bevestigd en de exacte reden voor het vertrek van de teambaas is dus ook nog niet bekend. De 46-jarige Kaltenborn werd in 2010 de eerste vrouwelijk teambaas in de historie van de Formule 1. Ze was sinds 2000 werkzaam bij het team."
         }
     ],
     "education": [
         {
-            "_source": "",
-            "storyTitle": "this is the story title",
-            "storyIntro": "this is the story title",
-            "storyText": "this is the story text"
+            "_source": "http://www.nu.nl/binnenland/4783668/basisscholen-stellen-politiek-ultimatum-hogere-lonen-leraren.html",
+            "writer": "John Doe",
+            "image": "http://media.nu.nl/m/vp8xmuxal65w_wd640.jpg/basisscholen-stellen-politiek-ultimatum-hogere-lonen-leraren.jpg",
+            "storyTitle": "Basisscholen stellen politiek ultimatum voor hogere lonen leraren",
+            "storyIntro": "Politieke partijen moeten vóór vrijdag laten weten of ze de komende kabinetsperiode structureel geld willen steken in het basisonderwijs. Ook moeten de partijen die dit toezeggen, garanderen dat dit standpunt terechtkomt in het regeerakkoord.",
+            "storyText": "Politieke partijen moeten vóór vrijdag laten weten of ze de komende kabinetsperiode structureel geld willen steken in het basisonderwijs. Ook moeten de partijen die dit toezeggen, garanderen dat dit standpunt terechtkomt in het regeerakkoord. Dat schrijven de onderwijsorganisaties de Algemene Onderwijsbond (AOb), de PO-raad en PO in Actie, verenigd in het PO-front, in een brief aan alle Tweede Kamerfracties. De organisaties eisen dat er meer geld wordt uitgetrokken voor betere salarissen en minder werkdruk in het primair onderwijs. Als de politiek dat niet doet, dan volgen er acties. De eerste actie is volgende week dinsdag. Basisscholen beginnen dan één uur later. Docenten geven het eerste uur geen les, maar voeren andere taken uit. Veel basisscholen doen mee aan deze actie."
         },
         {
-            "_source": "",
-            "storyTitle": "this is another story title",
-            "storyIntro": "this is another story title",
-            "storyText": "this is another story text"
+            "_source": "http://www.nu.nl/binnenland/4598226/proef-middelbare-scholen-waarbij-leerlingen-gaan-lesprogramma.html",
+            "writer": "John Doe",
+            "image": "http://media.nu.nl/m/tv4xhnnal21o_wd640.jpg/proef-middelbare-scholen-waarbij-leerlingen-gaan-lesprogramma.jpg",
+            "storyTitle": "Proef op middelbare scholen waarbij leerlingen gaan over lesprogramma",
+            "storyIntro": "Leerlingen van dertig middelbare scholen krijgen een grote stem in hun lesprogramma. Ze kunnen bijvoorbeeld een vak dat hun ligt op een hoger niveau volgen of een jaar eerder afronden, een extra vak of stage kiezen of alvast een vak volgen van een vervolgopleiding.",
+            "storyText": "Leerlingen van dertig middelbare scholen krijgen een grote stem in hun lesprogramma. Ze kunnen bijvoorbeeld een vak dat hun ligt op een hoger niveau volgen of een jaar eerder afronden, een extra vak of stage kiezen of alvast een vak volgen van een vervolgopleiding. De scholen doen mee aan een proef van twee jaar, op initiatief van staatssecretaris Sander Dekker (Onderwijs), de schoolbesturen en leerlingenbond LAKS. Het experiment moet laten zien wat er al kan en welke obstakels er nog zijn om leerlingen op hen toegesneden onderwijs te bieden. Onderzoekers volgen de proef op de voet. Dekker wil uiteindelijk in de wet vastleggen dat alle leerlingen in het voortgezet onderwijs hun eigen belangstelling kunnen volgen en talenten kunnen ontplooien. Nu zijn ze nog afhankelijk van wat de school hun biedt. De staatssecretaris wil dat voortaan de wensen van de leerling en niet langer het stramien van de school het uitgangspunt is. Scholen hebben volgens Dekker nu al veel ruimte voor maatwerk, maar benutten die te weinig. Dat is 'zonde', omdat 'je slechtste vak nu nog te vaak bepaalt hoe goed je kunt zijn in je beste vak', zei hij donderdag in De Telegraaf."
         }
     ]
 }

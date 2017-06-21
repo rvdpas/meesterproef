@@ -1,0 +1,9 @@
+<% storydata.sport.forEach(function (story) {%>
+    <article class="sport-story hide sport">
+        <h1><%= story.storyTitle %></h1>
+        <i class="fa fa-flask" aria-hidden="true"></i><span>Wetenschap</span>
+        <i class="fa fa-pencil" aria-hidden="true"></i><%= story.writer %></span>
+        <img src="<%= story.image %>">
+        <p><%= story.storyIntro %></p>
+    </article>
+<% }); %>
