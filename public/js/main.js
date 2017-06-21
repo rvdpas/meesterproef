@@ -26,10 +26,23 @@
 //   }
 // }
 
-var elem = document.getElementById('tech'),
-  checkBox = document.getElementById('check1');
-  checkBox.checked = false;
-  checkBox.onchange = function() {
-      elem.style.display = this.checked ? 'block' : 'none';
-  };
-checkBox.onchange();
+// var checkbox = document.getElementsByClassName(".toggle").addEventListener("change", function(elem){
+//   checkBox.checked = false;
+//   elem.style.display = this.checked ? 'block' : 'none';
+// });
+// checkBox.onchange();
+
+// Toggle checkbox and show associated content
+var checkboxes = document.querySelectorAll('input[name="interest"]');
+checkboxes.forEach(function(el) {
+  el.addEventListener('change', function() {
+    var content = document.querySelectorAll('.'+el.id);
+    content.forEach(function(contentEl) {
+      if(el.checked) {
+        contentEl.style.display = 'block';
+      } else {
+        contentEl.style.display = 'none';
+      }
+    })
+  });
+});

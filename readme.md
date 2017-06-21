@@ -3,6 +3,19 @@
 In this repository, you will find the code for De Persgroep application.
 De Persgroep is a leading publisher of national, regional and local news brands, magazines, websites and is active on radio. The goal of this project is to create a app for a younger group of future writers. This app will give them the chance to create content younger people enjoy based on their interests. In the app users can write and read stories they think are relevant for their target audience. The whole idea behind this that young writers get the opportunity to create the content for the young readers.
 
+## Concept
+
+
+## Progress
+
+### Week 1
+
+### Week 2
+
+### Week 3
+
+### Week 4
+
 ## Getting Started
 
 To get this application working on your system, please follow the steps as described below.
@@ -44,13 +57,12 @@ localhost:3000
 ## Built With
 
 * [NodeJS](https://nodejs.org/en/) 
-* [Socket.io](https://socket.io/) 
 
 ## Feature list  
 
-- [ ] Generate multiple subjects for a first interest check
+- [ X ] Generate multiple subjects for a first interest check
 - [ ] Save the users interest in a database
-- [ ] Show an overview of recommented stories
+- [ X ] Show an overview of recommented stories
 - [ ] Add share to social media functionality
 - [ ] Follow writers
 - [ ] login form with validation

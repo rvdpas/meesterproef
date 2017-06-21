@@ -96,6 +96,8 @@ img {
     list-style: none;
     border: 1px solid #333;
     text-align: center; }
+    #interests ul li:active, #interests ul li:focus {
+      background: red; }
     #interests ul li input[type='checkbox'] {
       position: absolute;
       top: -99999;

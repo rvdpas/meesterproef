@@ -119,6 +119,11 @@ img {
       border: 1px solid #333;
       text-align: center;
 
+      &:active,
+      &:focus {
+        background: red;
+      }
+
       input[type='checkbox'] {
         position: absolute;
         top: -99999;
