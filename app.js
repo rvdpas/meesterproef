@@ -22,15 +22,21 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.locals.storydata = require('./stories.json');
+var storydata = require('./stories.json');
 
 app.get('/', function(req, res){
-  res.render('index.ejs');
+  res.render('index.ejs', {storydata});
 });
 
-app.get('/detail', function(req, res){
-  res.render('detail.ejs');
-});
+// app.get('/:category/:id', function(req, res){
+//   var id = req.params.id;
+//   var category = req.params.category;
+//   console.log(category);
+//   var filtered = storydata.category.filter(function (val) {
+//       console.log(val)
+//   })[0];
+//   res.render('detail.ejs', {article: filtered});
+// });
 
 io.sockets.on('connection', function(socket) {
   connections.push(socket);

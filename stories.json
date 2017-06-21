@@ -3,6 +3,7 @@
         {
             "_source": "http://www.nu.nl/gadgets/4006357/grootste-ontwikkelingen-rondom-virtual-reality.html",
             "writer": "Marcel Vroegrijk",
+            "id": "story-1",
             "image": "https://www.w3schools.com/css/trolltunga.jpg",
             "storyTitle": "De grootste ontwikkelingen rondom virtual reality",
             "storyIntro": "Het enthousiasme rondom virtual reality beleefde afgelopen week een piek. De nog altijd prille markt voor dit stukje techniek kreeg er in slechts een paar dagen plots meerdere nieuwe spelers bij. De relatief oudgedienden presenteerden op hun beurt nieuwere versies van eerder onthulde brillen. We zetten de grootste ontwikkelingen voor u op een rij.",
@@ -11,6 +12,7 @@
         {
             "_source": "http://www.nu.nl/gadgets/4770549/zelflerende-robot-speelt-eigen-muziek-marimba.html",
             "writer": "Rob van der Pas",
+            "id": "story-2",
             "image": "http://media.nu.nl/m/5bdxluraplmq_wd640.jpg/zelflerende-robot-speelt-eigen-muziek-marimba.jpg",
             "storyTitle": "Zelflerende robot speelt eigen muziek op marimba ",
             "storyIntro": "Zelflerende robot Shimon heeft vijfduizend nummers en twee miljoen motieven, riffs en meer geanalyseerd en kan nu eigen muziek maken op zijn marimba.",

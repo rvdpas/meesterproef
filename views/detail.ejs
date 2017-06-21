@@ -1,13 +1,14 @@
 <% include partials/global/header %>
 
     <% include partials/global/top.ejs %>
-
-    <article class="technology-story">
-        <h1><%= storydata.technology[0].storyTitle %></h1>
-        <i class="fa fa-mobile" aria-hidden="true"></i><span>Technologie</span>
-        <i class="fa fa-pencil" aria-hidden="true"></i></i><span><%= storydata.technology[0].writer %></span>
-        <img src="img/zelflerende-robot-speelt-eigen-muziek-marimba.jpg">
-        <p><%= storydata.technology[0].storyText %></p>
-    </article>
+    <main id="detail">
+        <article>
+            <h1><%= article.storyTitle %></h1>
+            <i class="fa fa-mobile" aria-hidden="true"></i><span>Technologie</span>
+            <i class="fa fa-pencil" aria-hidden="true"></i></i><span><%= storydata.writer %></span>
+            <img src="<%= article.image %>">
+            <p><%= article.storyText %></p>
+        </article>
+    </main>
 
 <% include partials/global/footer.ejs %>
