@@ -12,3 +12,21 @@ checkboxes.forEach(function(el) {
     })
   });
 });
+
+// Save like to local storage
+function clickCounter() {
+  if(typeof(Storage) !== "undefined") {
+      if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+      } else {
+          localStorage.clickcount = 1;
+      }
+      like = localStorage.clickcount;
+      document.getElementById("likeCounter").innerHTML = localStorage.clickcount + ' likes';
+  }
+}
+var like = document.getElementById('like').addEventListener("click", clickCounter);
+
+
+
+

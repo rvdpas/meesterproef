@@ -15,7 +15,7 @@ html, body {
 }
 
 body {
-  width: 40em;
+  width: 55em;
   margin: 0 auto;
 }
 
@@ -92,6 +92,12 @@ article {
   margin: 1em 0;
   padding-bottom: 1em;
   border-bottom: 1px solid #c1c1c1;
+  width: 48%;
+  float: left;
+
+  &:nth-child(2n+1) {
+    margin-right: 4%;
+  }
 
   @at-root .detail & {
     border-bottom: none;
@@ -101,6 +107,12 @@ article {
     display: block;
     text-decoration: none;
     color: inherit;
+  }
+
+  i:first-of-type {
+    &:hover {
+      color: red;
+    }
   }
 
   img {
@@ -151,6 +163,17 @@ input[type=button] {
     padding: 2em 0;
     box-sizing: border-box;
     display: block;
-    width: 9em;
+    width: 12em;
+  }
+}
+
+.like {
+  position: fixed;
+  top: 50%;
+  right: 20%;
+  font-size: 3em;
+
+  span {
+    font-size: 0.6em;
   }
 }
