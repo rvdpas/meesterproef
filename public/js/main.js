@@ -35,18 +35,21 @@ function showArticles() {
 }
 
 // Save like to local storage
+var likes =  document.getElementById("likeCounter");
+var likeButton = document.querySelector('input[name="like"]').addEventListener("click", function() {
+    clickCounter();
+  });
 function clickCounter() {
-  if(typeof(Storage) !== "undefined") {
+  if (localStorage !== "undefined") {
       if (localStorage.clickcount) {
           localStorage.clickcount = Number(localStorage.clickcount)+1;
       } else {
           localStorage.clickcount = 1;
       }
       like = localStorage.clickcount;
-      document.getElementById("likeCounter").innerHTML = localStorage.clickcount + ' likes';
   }
+  likes.innerHTML = localStorage.clickcount + ' likes';
 }
-
 
 
 

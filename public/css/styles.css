@@ -141,7 +141,7 @@ input[type=button] {
 
 .detail {
   width: 40em;
-  margin: 0 auto 5em auto; }
+  margin: 0 auto 2em auto; }
   .detail article img {
     margin-bottom: 1em; }
   .detail article blockquote {
@@ -151,3 +151,14 @@ input[type=button] {
     padding: 0.5em 10px; }
   .detail article p {
     margin-bottom: 1em; }
+  .detail article .cta {
+    background: #1b1b1b;
+    color: #fff;
+    padding: 2em; }
+    .detail article .cta div {
+      display: inline-block;
+      font-size: 1.1em;
+      line-height: 43px; }
+    .detail article .cta input {
+      float: right;
+      color: #fff; }

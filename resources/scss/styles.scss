@@ -194,7 +194,7 @@ input[type=button] {
 
 .detail {
   width: 40em;
-  margin: 0 auto 5em auto;
+  margin: 0 auto 2em auto;
 
   article {
     img {
@@ -210,6 +210,22 @@ input[type=button] {
 
     p {
       margin-bottom: 1em;
+    }
+
+    .cta {
+      background: #1b1b1b;
+      color: #fff;
+      padding: 2em;
+
+      div {
+        display: inline-block;
+        font-size: 1.1em;
+        line-height: 43px;
+      }
+      input {
+        float: right;
+        color: #fff;
+      }
     }
   }
 }
