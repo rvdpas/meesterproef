@@ -21,7 +21,9 @@ img {
   display: block; }
 
 .top {
-  padding: 2em 0; }
+  padding: 2em 0;
+  border-bottom: 1px solid #cacaca;
+  margin-bottom: 2em; }
   .top h1 {
     text-align: center; }
   .top::after {
@@ -66,8 +68,8 @@ img {
     height: 8em;
     color: #333; }
 
-.hide {
-  display: none; }
+i {
+  margin-right: 0.4em; }
 
 .stories {
   display: flex;
@@ -77,26 +79,21 @@ img {
   padding-bottom: 1em;
   border-bottom: 1px solid #c1c1c1;
   width: 100%; }
-  .stories > * {
-    width: 45%;
-    margin: 0;
-    padding: 0; }
-  .detail .stories {
-    border-bottom: none; }
   .stories a {
     display: block;
     text-decoration: none;
-    color: inherit; }
+    color: inherit;
+    width: 45%; }
   .stories i:first-of-type:hover {
     color: red; }
   .stories img {
     margin-bottom: 0.5em;
     margin-top: 0.2em; }
-  .stories i {
-    margin-right: 0.2em; }
-    .stories i::before {
-      content: '';
-      font-size: 1em; }
+  .stories i::before {
+    font-size: 1em;
+    display: inline-block;
+    width: 20px;
+    height: 20px; }
   .stories span {
     font-style: italic;
     margin-right: 0.5em;
@@ -133,3 +130,24 @@ input[type=button] {
   font-size: 3em; }
   .like span {
     font-size: 0.6em; }
+
+.iconWrapper {
+  margin-bottom: 1em; }
+  .iconWrapper .icon {
+    display: inline-block;
+    margin-right: 1em; }
+  .iconWrapper .icon:last-child {
+    margin-right: 0; }
+
+.detail {
+  width: 40em;
+  margin: 0 auto 5em auto; }
+  .detail article img {
+    margin-bottom: 1em; }
+  .detail article blockquote {
+    background: #e8e8e8;
+    border-left: 10px solid #ff6200;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px; }
+  .detail article p {
+    margin-bottom: 1em; }
