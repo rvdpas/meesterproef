@@ -25,7 +25,7 @@ function clickCounter() {
       document.getElementById("likeCounter").innerHTML = localStorage.clickcount + ' likes';
   }
 }
-var like = document.getElementById('like').addEventListener("click", clickCounter);
+// var like = document.getElementById('like').addEventListener("click", clickCounter);
 
 
 

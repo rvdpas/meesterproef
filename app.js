@@ -25,18 +25,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 var storydata = require('./stories.json');
 
 app.get('/', function(req, res){
-  res.render('index.ejs', {storydata});
+  res.render('index.ejs', {stories: storydata});
 });
 
-// app.get('/:category/:id', function(req, res){
-//   var id = req.params.id;
-//   var category = req.params.category;
-//   console.log(category);
-//   var filtered = storydata.category.filter(function (val) {
-//       console.log(val)
-//   })[0];
-//   res.render('detail.ejs', {article: filtered});
-// });
+app.get('/:id', function(req, res){
+  var id = req.params.id;
+  var article = storydata.articles.filter(function (val) {
+      return val.id === id;
+  })[0];
+  res.render('detail.ejs', {article: article});
+});
 
 io.sockets.on('connection', function(socket) {
   connections.push(socket);
