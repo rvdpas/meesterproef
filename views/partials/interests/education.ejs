@@ -1,12 +1,14 @@
-<% stories.articles.forEach(function (story) {%>
-    <article class="education-story hide education">
-        <a href="/<%= story.id %>">
-            <h2><%= story.storyTitle %></h2>
-            <i class="fa fa-heart" aria-hidden="true"></i><span>Likes</span>
-            <i class="fa fa-flask" aria-hidden="true"></i><span>Wetenschap</span>
-            <i class="fa fa-pencil" aria-hidden="true"></i><%= story.writer %></span>
-            <img src="<%= story.image %>">
-            <p><%= story.storyIntro %></p>
-        </a>
-    </article>
-<% }); %>
+<article class="education-story education">
+    <% stories.articles.forEach(function (story) {%>
+        <% if (story.category === 'education') { %>
+            <a href="/<%= story.id %>">
+                <h2><%= story.storyTitle %></h2>
+                <i class="fa fa-heart" aria-hidden="true"></i><span>Likes</span>
+                <i class="fa fa-flask" aria-hidden="true"></i><span><%= story.category %></span>
+                <i class="fa fa-pencil" aria-hidden="true"></i><%= story.writer %></span>
+                <img src="<%= story.image %>">
+                <p><%= story.storyIntro %></p>
+            </a>
+        <% } %>
+    <% }); %>
+</article>

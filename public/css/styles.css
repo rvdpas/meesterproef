@@ -54,6 +54,8 @@ img {
       position: absolute;
       top: -99999;
       left: -99999; }
+      #interests ul li input[type='checkbox']:checked + label {
+        background-color: red; }
   #interests ul a {
     text-decoration: none;
     display: block;
@@ -67,31 +69,35 @@ img {
 .hide {
   display: none; }
 
-article {
+.stories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 1em 0;
   padding-bottom: 1em;
   border-bottom: 1px solid #c1c1c1;
-  width: 48%;
-  float: left; }
-  article:nth-child(2n+1) {
-    margin-right: 4%; }
-  .detail article {
+  width: 100%; }
+  .stories > * {
+    width: 45%;
+    margin: 0;
+    padding: 0; }
+  .detail .stories {
     border-bottom: none; }
-  article a {
+  .stories a {
     display: block;
     text-decoration: none;
     color: inherit; }
-  article i:first-of-type:hover {
+  .stories i:first-of-type:hover {
     color: red; }
-  article img {
+  .stories img {
     margin-bottom: 0.5em;
     margin-top: 0.2em; }
-  article i {
+  .stories i {
     margin-right: 0.2em; }
-    article i::before {
+    .stories i::before {
       content: '';
       font-size: 1em; }
-  article span {
+  .stories span {
     font-style: italic;
     margin-right: 0.5em;
     margin-bottom: 0.2em;

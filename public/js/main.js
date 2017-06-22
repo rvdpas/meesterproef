@@ -1,17 +1,38 @@
 // Toggle checkbox and show associated content
 var checkboxes = document.querySelectorAll('input[name="interest"]');
+var categories = [];
+
 checkboxes.forEach(function(el) {
-  el.addEventListener('change', function() {
-    var content = document.querySelectorAll('.'+el.id);
-    content.forEach(function(contentEl) {
-      if(el.checked) {
-        contentEl.style.display = 'block';
-      } else {
-        contentEl.style.display = 'none';
-      }
-    })
-  });
+  el.addEventListener('change', showArticles);
 });
+
+// Show category articles
+function showArticles() {
+  var allArticles = document.querySelectorAll('.stories > a');
+
+  // Add/remove category from global array based on checkbox-state
+  if (this.checked) {
+    categories.push(this.id);
+  } else {
+    categories.splice(categories.indexOf(this.id), 1);
+  }
+
+  console.log(categories);
+
+  // Hides all articles
+  allArticles.forEach(function(article) {
+    article.style.display = 'none';
+  });
+
+  // Shows all articles based on user's category input
+  categories.forEach(function(category) {
+    var categoryArticles = document.querySelectorAll('.stories > a[data-category="' + category + '"]' );
+
+    categoryArticles.forEach(function(article) {
+      article.style.display = 'block';
+    });
+  });
+}
 
 // Save like to local storage
 function clickCounter() {
@@ -25,7 +46,6 @@ function clickCounter() {
       document.getElementById("likeCounter").innerHTML = localStorage.clickcount + ' likes';
   }
 }
-// var like = document.getElementById('like').addEventListener("click", clickCounter);
 
 
 

@@ -68,6 +68,10 @@ img {
         position: absolute;
         top: -99999;
         left: -99999;
+
+        &:checked + label {
+          background-color: red;
+        }
       }
     }
 
@@ -88,15 +92,19 @@ img {
   display: none;
 }
 
-article {
+.stories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 1em 0;
   padding-bottom: 1em;
   border-bottom: 1px solid #c1c1c1;
-  width: 48%;
-  float: left;
+  width: 100%;
 
-  &:nth-child(2n+1) {
-    margin-right: 4%;
+  & > * {
+    width: 45%;
+    margin: 0;
+    padding: 0;
   }
 
   @at-root .detail & {
