@@ -54,6 +54,7 @@ localhost:3000
 - [x] Generate multiple subjects for a first interest check
 - [x] Show an overview of recommented stories
 - [x] Save users likes in Local storage
+- [ ] Show a list of favorite stories
 - [ ] Follow writers
 - [ ] Comment on the article
 - [ ] Rate the comments on the article
