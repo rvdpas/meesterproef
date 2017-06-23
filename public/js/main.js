@@ -21,7 +21,8 @@ function showArticles() {
 
   // Hides all articles
   allArticles.forEach(function(article) {
-    article.style.display = 'none';
+    article.classList.add('hide');
+    article.classList.remove('show');
   });
 
   // Shows all articles based on user's category input
@@ -29,7 +30,8 @@ function showArticles() {
     var categoryArticles = document.querySelectorAll('.stories > a[data-category="' + category + '"]' );
 
     categoryArticles.forEach(function(article) {
-      article.style.display = 'block';
+      article.classList.add('show');
+      article.classList.remove('hide');
     });
   });
 }
