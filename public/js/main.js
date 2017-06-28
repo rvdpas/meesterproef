@@ -94,7 +94,3 @@ function dislikeCounter() {
   }
   likes.innerHTML = localStorage.clickcount + ' likes';
 }
-
-
-
-

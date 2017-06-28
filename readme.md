@@ -46,23 +46,26 @@ localhost:3000
 
 ## Built With
 
-* [NodeJS](https://nodejs.org/en/) 
+* [Node.js](https://nodejs.org/en/) 
+* [Socket.io](https://socket.io/) 
+* [EJS](http://www.embeddedjs.com/) 
 
 ## Feature list  
 
 ### Must
 - [x] Generate multiple subjects for a first interest check
-- [x] Show an overview of recommented stories
+- [x] Show an overview of recommended stories
 - [x] Save users likes in Local storage
-- [ ] Show a list of favorite stories
-- [ ] Follow writers
-- [ ] Comment on the article
-- [ ] Rate the comments on the article
-- [ ] Real-time comments
+- [x] Save users dislikes in local storage
+- [x] Add sockets for real-time suggests
+- [ ] Add sockets for real-time likes
 
 ### Could
 - [ ] Add share to social media functionality
 - [ ] login form with validation
+- [ ] Comment on the article
+- [ ] Rate the comments on the article
+- [ ] Real-time comments
 
 ## Planning
 
