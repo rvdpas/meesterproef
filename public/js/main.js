@@ -62,10 +62,14 @@ socket.on('suggest', function(data) {
 
 // Save like to local storage
 var likes =  document.querySelector(".amountOfLikes");
+var dislikeButton = document.querySelector('.dislikeArticle').addEventListener("click", function() {
+  dislikeCounter();
+});
 var likeButton = document.querySelector('.likeArticle').addEventListener("click", function() {
-    clickCounter();
-  });
-function clickCounter() {
+  likeCounter();
+});
+
+function likeCounter() {
   if (localStorage !== "undefined") {
       if (localStorage.clickcount) {
           localStorage.clickcount = Number(localStorage.clickcount)+1;
@@ -76,6 +80,19 @@ function clickCounter() {
   }
   likes.innerHTML = localStorage.clickcount + ' likes';
 }
+
+function dislikeCounter() {
+  if (localStorage !== "undefined") {
+      if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)-1;
+      } else {
+          localStorage.clickcount = -1;
+      }
+      like = localStorage.clickcount;
+  }
+  likes.innerHTML = localStorage.clickcount + ' likes';
+}
+
 
 
 

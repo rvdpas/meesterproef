@@ -166,4 +166,7 @@ input[type=button] {
       line-height: 43px; }
     .detail article .cta input {
       float: right;
-      color: #fff; }
+      color: #fff;
+      width: 7em; }
+    .detail article .cta .dislikeArticle {
+      margin-right: 1em; }

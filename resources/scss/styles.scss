@@ -238,9 +238,15 @@ input[type=button] {
         font-size: 1.1em;
         line-height: 43px;
       }
+
       input {
         float: right;
         color: #fff;
+        width: 7em;
+      }
+
+      .dislikeArticle {
+        margin-right: 1em;
       }
     }
   }
