@@ -4,7 +4,7 @@
 
     <% include partials/interests/interests.ejs %>
 
-    <section class="stories">
+    <main class="stories">
         <% stories.articles.forEach(function (story) { %>
             <a href="/<%= story.id %>" class="hide" data-category="<%= story.category %>">
                 <h2><%= story.storyTitle %></h2>
@@ -17,6 +17,6 @@
                 <p><%= story.storyIntro %></p>
             </a>
         <% }); %>
-    </section>
+    </main>
 
 <% include partials/global/footer.ejs %>
