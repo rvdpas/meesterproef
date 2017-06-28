@@ -37,7 +37,8 @@ a {
     clear: both; }
   .top .image-wrapper {
     width: 30%;
-    float: left; }
+    float: left;
+    display: block; }
   .top nav {
     float: right; }
     .top nav a {
