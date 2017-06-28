@@ -1,3 +1,4 @@
+// default styles
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +25,7 @@ img {
   display: block;
 }
 
+// top styles
 .top {
   padding: 2em 0;
   border-bottom: 1px solid #cacaca;
@@ -45,14 +47,7 @@ img {
   margin: 0 auto;
 }
 
-.user-window {
-  max-width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
+// interest blocks
 #interests {
   ul {
     display: flex;
@@ -68,8 +63,8 @@ img {
 
       input[type='checkbox'] {
         position: absolute;
-        top: -99999;
-        left: -99999;
+        top: -99999px;
+        left: -99999px;
 
         &:checked + label {
           background-color: #ff6900;
@@ -96,13 +91,13 @@ i {
   margin-right: 0.4em;
 }
 
+// story styles
 .stories {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 1em 0;
   padding-bottom: 1em;
-  border-bottom: 1px solid #c1c1c1;
   width: 100%;
 
   a {
@@ -169,17 +164,6 @@ input[type=button] {
   }
 }
 
-.like {
-  position: fixed;
-  top: 50%;
-  right: 20%;
-  font-size: 3em;
-
-  span {
-    font-size: 0.6em;
-  }
-}
-
 .iconWrapper {
   margin-bottom: 1em;
 
@@ -192,7 +176,7 @@ input[type=button] {
     margin-right: 0;
   }
 }
-
+// toggle classes
 .hide {
   display: none;
 }
@@ -201,6 +185,7 @@ input[type=button] {
   display: block;
 }
 
+// detail page styles
 .detail {
   width: 40em;
   margin: 0 auto 2em auto;

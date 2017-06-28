@@ -35,13 +35,6 @@ img {
   width: 40%;
   margin: 0 auto; }
 
-.user-window {
-  max-width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
 #interests ul {
   display: flex;
   flex-direction: row;
@@ -54,8 +47,8 @@ img {
     text-align: center; }
     #interests ul li input[type='checkbox'] {
       position: absolute;
-      top: -99999;
-      left: -99999; }
+      top: -99999px;
+      left: -99999px; }
       #interests ul li input[type='checkbox']:checked + label {
         background-color: #ff6900;
         opacity: 0.7;
@@ -79,7 +72,6 @@ i {
   justify-content: space-between;
   margin: 1em 0;
   padding-bottom: 1em;
-  border-bottom: 1px solid #c1c1c1;
   width: 100%; }
   .stories a {
     text-decoration: none;
@@ -123,14 +115,6 @@ input[type=button] {
   box-sizing: border-box;
   display: block;
   width: 12em; }
-
-.like {
-  position: fixed;
-  top: 50%;
-  right: 20%;
-  font-size: 3em; }
-  .like span {
-    font-size: 0.6em; }
 
 .iconWrapper {
   margin-bottom: 1em; }
