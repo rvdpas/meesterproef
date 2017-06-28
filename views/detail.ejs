@@ -3,10 +3,6 @@
     <% include partials/global/top.ejs %>
     <main class="detail">
         <article>
-            <section class="cta">
-                <div>Moeten anderen dit ook lezen?</div>
-                <input class="readLater" type="button" name="like" value="Iedereen moet dit lezen!">
-            </section>
             <h1 class="title"><%= article.storyTitle %></h1>
             <div class="iconWrapper">
                 <div class="icon">
@@ -21,8 +17,12 @@
             </div>
             <img class="image" src="<%= article.image %>">
             <p><%= article.storyTextPart1 %></p>
-            <blockquote><%= article.storyQuote %></blockquote>
+            <section class="cta">
+                <div>Moeten anderen dit ook lezen?</div>
+                <input class="readLater" type="button" name="like" value="Iedereen moet dit lezen!">
+            </section>
             <p><%= article.storyTextPart2 %></p>
+            <blockquote><%= article.storyQuote %></blockquote>
             <p><%= article.storyTextPart3 %></p>
             <p><%= article.storyTextPart4 %></p>
             <p><%= article.storyTextPart5 %></p>

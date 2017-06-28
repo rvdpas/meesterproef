@@ -1,3 +1,4 @@
+// Declare socket variable
 var socket = io();
 
 // Toggle checkbox and show associated content
@@ -61,7 +62,7 @@ socket.on('suggest', function(data) {
 });
 
 
-// Save like to local storage
+// Save like and dislike to local storage
 var likes =  document.querySelector(".amountOfLikes");
 var dislikeButton = document.querySelector('.dislikeArticle').addEventListener("click", function() {
   dislikeCounter();
