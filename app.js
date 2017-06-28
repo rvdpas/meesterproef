@@ -23,17 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var storydata = require('./stories.json');
 
-// io.on('connection', function(socket) {
-//   console.log('test');
-
-//   // update like
-//   socket.on('like', function(data) {
-//     io.sockets.emit('like', function() {
-//       console.log(data);
-//     });
-//   });
-// });
-
 app.get('/', function(req, res){
   res.render('index.ejs', {stories: storydata});
 });
@@ -46,24 +35,9 @@ app.get('/:id', function(req, res){
   res.render('detail.ejs', {article: articles});
 });
 
-
 io.on('connection', function(socket) {
-  // socket.on('like', function() {
-    // io.emit('like');
-    console.log('test')
-
-    socket.on('read later', function(data) {
-      io.sockets.emit("read later", data);
-      console.log(data.title)
-    });
-  // });
+  socket.on('suggest', function(data) {
+    io.sockets.emit("suggest", data);
+    console.log(data.title)
+  });
 });
-
-// io.sockets.on('connection', function(socket) {
-//   connections.push(socket);
-//   console.log('Connected: %s sockets connected', connections.length);
-
-// });
-
-
-

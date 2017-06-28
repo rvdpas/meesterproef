@@ -37,54 +37,45 @@ function showArticles() {
     });
   });
 }
-
-
+// Create a suggest list
 var title = document.getElementById('title');
 var image = document.getElementById('image');
+var link = document.getElementById('link');
 var readLater = document.getElementById('readLater');
 var suggest = document.getElementById('suggest');
+var heading = document.getElementsByTagName('H2');
 
 readLater.addEventListener('click', function() {
-  socket.emit('read later', {
+  socket.emit('suggest', {
     title: title,
+    link: link,
     image: image
   });
-    console.log(title)
 });
 
-socket.on('read later', function(data) {
-  suggest.innerHTML += '<h2>Bekijk ook deze artikelen</h2>' + title.outerHTML + image.outerHTML;
-  console.log(title);
+socket.on('suggest', function(data) {
+  heading[0].classList.remove('hide');
+  link = link.innerHTML;
+  suggest.innerHTML += '<a href="/' + link + '">' + title.outerHTML + image.outerHTML + '</a>';
 });
 
 
-// // Save like to local storage
-// var likes =  document.querySelector(".amountOfLikes");
-// var likeButton = document.querySelector('.likeArticle').addEventListener("click", function() {
-//     clickCounter();
-//   });
-// function clickCounter() {
-//   if (localStorage !== "undefined") {
-//       if (localStorage.clickcount) {
-//           localStorage.clickcount = Number(localStorage.clickcount)+1;
-//       } else {
-//           localStorage.clickcount = 1;
-//       }
-//       like = localStorage.clickcount;
-//   }
-//   likes.innerHTML = localStorage.clickcount + ' likes';
-// }
+// Save like to local storage
+var likes =  document.querySelector(".amountOfLikes");
+var likeButton = document.querySelector('.likeArticle').addEventListener("click", function() {
+    clickCounter();
+  });
+function clickCounter() {
+  if (localStorage !== "undefined") {
+      if (localStorage.clickcount) {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+      } else {
+          localStorage.clickcount = 1;
+      }
+      like = localStorage.clickcount;
+  }
+  likes.innerHTML = localStorage.clickcount + ' likes';
+}
 
-
-// socket.on('like', function(like) {
-//   var counterElement = document.querySelector('.likeArticle').addEventListener("click", function() {
-//     console.log(counterElement);
-//     console.log('test')
-//   });
-// });
-
-// socket.on('like', function() {
-//   alert('test');
-// });
 
 

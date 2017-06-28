@@ -26,6 +26,7 @@
             <p><%= article.storyTextPart3 %></p>
             <p><%= article.storyTextPart4 %></p>
             <p><%= article.storyTextPart5 %></p>
+            <p class="hide" id="link"><%= article.id %></p>
 
             <section class="cta">
                 <div>Vond je dit een leuk artikel?</div>
@@ -33,8 +34,9 @@
             </section>
         </article>
 
-        <section id="suggest">
-
+        <section>
+            <h2 class="hide">Bekijk ook deze artikelen</h2>
+            <div id="suggest"></div>
         </section>
     </main>
 
