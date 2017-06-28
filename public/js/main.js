@@ -38,11 +38,11 @@ function showArticles() {
   });
 }
 // Create a suggest list
-var title = document.getElementById('title');
-var image = document.getElementById('image');
-var link = document.getElementById('link');
-var readLater = document.getElementById('readLater');
-var suggest = document.getElementById('suggest');
+var title = document.querySelector('.title');
+var image = document.querySelector('.image');
+var link = document.querySelector('.link');
+var readLater = document.querySelector('.readLater');
+var suggest = document.querySelector('.suggest');
 var heading = document.getElementsByTagName('H2');
 
 readLater.addEventListener('click', function() {
@@ -56,7 +56,8 @@ readLater.addEventListener('click', function() {
 socket.on('suggest', function(data) {
   heading[0].classList.remove('hide');
   link = link.innerHTML;
-  suggest.innerHTML += '<a href="/' + link + '">' + title.outerHTML + image.outerHTML + '</a>';
+  title = title.innerHTML;
+  suggest.innerHTML += '<a class="suggested" href="/' + link + '">' + '<h3>' + title + '</h3>' + image.outerHTML + '</a>';
 });
 
 

@@ -4,10 +4,10 @@
     <main class="detail">
         <article>
             <section class="cta">
-                <div>Geen tijd om te lezen?</div>
-                <input id="readLater" type="button" name="like" value="Lees later!">
+                <div>Moeten anderen dit ook lezen?</div>
+                <input class="readLater" type="button" name="like" value="Iedereen moet dit lezen!">
             </section>
-            <h1 id="title"><%= article.storyTitle %></h1>
+            <h1 class="title"><%= article.storyTitle %></h1>
             <div class="iconWrapper">
                 <div class="icon">
                     <i class="fa fa-heart like" aria-hidden="true"></i><span class="amountOfLikes">0 Likes</span>
@@ -19,16 +19,16 @@
                     <i class="fa fa-pencil" aria-hidden="true"></i></i><span><%= article.writer %></span>
                 </div>
             </div>
-            <img id="image" src="<%= article.image %>">
+            <img class="image" src="<%= article.image %>">
             <p><%= article.storyTextPart1 %></p>
             <blockquote><%= article.storyQuote %></blockquote>
             <p><%= article.storyTextPart2 %></p>
             <p><%= article.storyTextPart3 %></p>
             <p><%= article.storyTextPart4 %></p>
             <p><%= article.storyTextPart5 %></p>
-            <p class="hide" id="link"><%= article.id %></p>
+            <p class="hide link"><%= article.id %></p>
 
-            <section class="cta">
+            <section class="cta cta-like">
                 <div>Wat vond je van dit artikel?</div>
                 <input type="button" class="likeArticle" value="Like">
                 <input type="button" class="dislikeArticle" value="Dislike">
@@ -37,7 +37,7 @@
 
         <section>
             <h2 class="hide">Bekijk ook deze artikelen</h2>
-            <div id="suggest"></div>
+            <div class="suggest"></div>
         </section>
     </main>
 

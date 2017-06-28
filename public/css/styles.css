@@ -39,16 +39,6 @@ a {
     width: 30%;
     display: block;
     margin: 0 auto; }
-  .top nav {
-    float: right; }
-    .top nav a {
-      line-height: 86px;
-      border: 1px solid #ff6900;
-      padding: 1em 0.5em;
-      border-radius: 5px; }
-      .top nav a:hover {
-        background: #ff6900;
-        color: #fff; }
 
 #interests ul {
   display: flex;
@@ -166,7 +156,16 @@ input[type=button] {
       line-height: 43px; }
     .detail article .cta input {
       float: right;
-      color: #fff;
-      width: 7em; }
+      color: #fff; }
     .detail article .cta .dislikeArticle {
       margin-right: 1em; }
+  .detail article .cta-like input {
+    width: 7em; }
+
+.suggested {
+  width: 45%;
+  float: left;
+  display: block;
+  margin: 0 5% 5% 0; }
+  .suggested:nth-of-type(even) {
+    margin-right: 0; }

@@ -51,22 +51,6 @@ a {
     display: block;
     margin: 0 auto;
   }
-
-  nav {
-    float: right;
-
-    a {
-      line-height: 86px;
-      border: 1px solid #ff6900;
-      padding: 1em 0.5em;
-      border-radius: 5px;
-
-      &:hover {
-        background: #ff6900;
-        color: #fff;
-      }
-    }
-  }
 }
 
 
@@ -242,12 +226,27 @@ input[type=button] {
       input {
         float: right;
         color: #fff;
-        width: 7em;
       }
 
-      .dislikeArticle {
+      .dislikeArticle  {
         margin-right: 1em;
       }
     }
+    .cta-like {
+      input {
+        width: 7em;
+      }
+    }
+  }
+}
+
+.suggested {
+  width: 45%;
+  float: left;
+  display: block;
+  margin: 0 5% 5% 0;
+
+  &:nth-of-type(even) {
+    margin-right: 0;
   }
 }
