@@ -99,9 +99,7 @@ i {
     margin-top: 0.2em; }
   .stories i::before {
     font-size: 1em;
-    display: inline-block;
-    width: 20px;
-    height: 20px; }
+    display: inline-block; }
   .stories span {
     font-style: italic;
     margin-right: 0.5em;
@@ -160,7 +158,8 @@ input[type=button] {
   .detail article .cta {
     background: #1b1b1b;
     color: #fff;
-    padding: 2em; }
+    padding: 2em;
+    margin-bottom: 1em; }
     .detail article .cta div {
       display: inline-block;
       font-size: 1.1em;

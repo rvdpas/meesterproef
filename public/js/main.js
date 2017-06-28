@@ -1,3 +1,5 @@
+var socket = io();
+
 // Toggle checkbox and show associated content
 var checkboxes = document.querySelectorAll('input[name="interest"]');
 var categories = [];
@@ -36,22 +38,53 @@ function showArticles() {
   });
 }
 
-// Save like to local storage
-var likes =  document.getElementById("likeCounter");
-var likeButton = document.querySelector('input[name="like"]').addEventListener("click", function() {
-    clickCounter();
-  });
-function clickCounter() {
-  if (localStorage !== "undefined") {
-      if (localStorage.clickcount) {
-          localStorage.clickcount = Number(localStorage.clickcount)+1;
-      } else {
-          localStorage.clickcount = 1;
-      }
-      like = localStorage.clickcount;
-  }
-  likes.innerHTML = localStorage.clickcount + ' likes';
-}
 
+var title = document.getElementById('title');
+var image = document.getElementById('image');
+var readLater = document.getElementById('readLater');
+var suggest = document.getElementById('suggest');
+
+readLater.addEventListener('click', function() {
+  socket.emit('read later', {
+    title: title,
+    image: image
+  });
+    console.log(title)
+});
+
+socket.on('read later', function(data) {
+  suggest.innerHTML += '<h2>Bekijk ook deze artikelen</h2>' + title.outerHTML + image.outerHTML;
+  console.log(title);
+});
+
+
+// // Save like to local storage
+// var likes =  document.querySelector(".amountOfLikes");
+// var likeButton = document.querySelector('.likeArticle').addEventListener("click", function() {
+//     clickCounter();
+//   });
+// function clickCounter() {
+//   if (localStorage !== "undefined") {
+//       if (localStorage.clickcount) {
+//           localStorage.clickcount = Number(localStorage.clickcount)+1;
+//       } else {
+//           localStorage.clickcount = 1;
+//       }
+//       like = localStorage.clickcount;
+//   }
+//   likes.innerHTML = localStorage.clickcount + ' likes';
+// }
+
+
+// socket.on('like', function(like) {
+//   var counterElement = document.querySelector('.likeArticle').addEventListener("click", function() {
+//     console.log(counterElement);
+//     console.log('test')
+//   });
+// });
+
+// socket.on('like', function() {
+//   alert('test');
+// });
 
 

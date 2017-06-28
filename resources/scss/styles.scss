@@ -144,8 +144,6 @@ i {
     &::before {
       font-size: 1em;
       display: inline-block;
-      width: 20px;
-      height: 20px;
     }
   }
 
@@ -233,6 +231,7 @@ input[type=button] {
       background: #1b1b1b;
       color: #fff;
       padding: 2em;
+      margin-bottom: 1em;
 
       div {
         display: inline-block;

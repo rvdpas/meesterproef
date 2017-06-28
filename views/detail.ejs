@@ -3,10 +3,14 @@
     <% include partials/global/top.ejs %>
     <main class="detail">
         <article>
-            <h1><%= article.storyTitle %></h1>
+            <section class="cta">
+                <div>Geen tijd om te lezen?</div>
+                <input id="readLater" type="button" name="like" value="Lees het artikel later!">
+            </section>
+            <h1 id="title"><%= article.storyTitle %></h1>
             <div class="iconWrapper">
                 <div class="icon">
-                    <i class="fa fa-heart like" aria-hidden="true"></i><span>0 Likes</span>
+                    <i class="fa fa-heart like" aria-hidden="true"></i><span class="amountOfLikes">0 Likes</span>
                 </div>
                 <div class="icon">
                     <i class="fa fa-mobile" aria-hidden="true"></i><span><%= article.category %></span>
@@ -15,7 +19,7 @@
                     <i class="fa fa-pencil" aria-hidden="true"></i></i><span><%= article.writer %></span>
                 </div>
             </div>
-            <img src="<%= article.image %>">
+            <img id="image" src="<%= article.image %>">
             <p><%= article.storyTextPart1 %></p>
             <blockquote><%= article.storyQuote %></blockquote>
             <p><%= article.storyTextPart2 %></p>
@@ -24,10 +28,14 @@
             <p><%= article.storyTextPart5 %></p>
 
             <section class="cta">
-                <div>Geen tijd om te lezen?</div>
-                <input type="button" name="like" value="Lees het artikel later!">
+                <div>Vond je dit een leuk artikel?</div>
+                <input type="button" class="likeArticle" value="Like het artikel!">
             </section>
         </article>
+
+        <section id="suggest">
+
+        </section>
     </main>
 
 <% include partials/global/footer.ejs %>
