@@ -25,27 +25,49 @@ img {
   display: block;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 // top styles
 .top {
   padding: 2em 0;
   border-bottom: 1px solid #cacaca;
   margin-bottom: 2em;
 
-  h1 {
-    text-align: center;
-  }
-
   &::after {
     content: '';
     display: table;
     clear: both;
   }
+
+  .image-wrapper {
+    width: 30%;
+    float: left;
+  }
+
+  nav {
+    float: right;
+
+    a {
+      line-height: 86px;
+      border: 1px solid #ff6900;
+      padding: 1em 0.5em;
+      border-radius: 5px;
+
+      &:hover {
+        background: #ff6900;
+        color: #fff;
+      }
+    }
+  }
 }
 
-.image-wrapper {
-  width: 40%;
-  margin: 0 auto;
-}
 
 // interest blocks
 #interests {

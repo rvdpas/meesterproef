@@ -28,6 +28,11 @@ app.get('/', function(req, res){
   res.render('index.ejs', {stories: storydata});
 });
 
+app.get('/saved-articles', function(req, res){
+  res.render('index.ejs', {stories: storydata});
+});
+
+
 app.get('/:id', function(req, res){
   var id = req.params.id;
   var article = storydata.articles.filter(function (val) {

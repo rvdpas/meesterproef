@@ -20,20 +20,34 @@ img {
   width: 100%;
   display: block; }
 
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
 .top {
   padding: 2em 0;
   border-bottom: 1px solid #cacaca;
   margin-bottom: 2em; }
-  .top h1 {
-    text-align: center; }
   .top::after {
     content: '';
     display: table;
     clear: both; }
-
-.image-wrapper {
-  width: 40%;
-  margin: 0 auto; }
+  .top .image-wrapper {
+    width: 30%;
+    float: left; }
+  .top nav {
+    float: right; }
+    .top nav a {
+      line-height: 86px;
+      border: 1px solid #ff6900;
+      padding: 1em 0.5em;
+      border-radius: 5px; }
+      .top nav a:hover {
+        background: #ff6900;
+        color: #fff; }
 
 #interests ul {
   display: flex;
