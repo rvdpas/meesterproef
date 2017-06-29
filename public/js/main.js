@@ -20,8 +20,6 @@ function showArticles() {
     categories.splice(categories.indexOf(this.id), 1);
   }
 
-  console.log(categories);
-
   // Hides all articles
   allArticles.forEach(function(article) {
     article.classList.add('hide');
@@ -60,7 +58,6 @@ socket.on('suggest', function(data) {
   title = title.innerHTML;
   suggest.innerHTML += '<a class="suggested" href="/' + link + '">' + '<h3>' + title + '</h3>' + image.outerHTML + '</a>';
 });
-
 
 // Save like and dislike to local storage
 var likes =  document.querySelector(".amountOfLikes");

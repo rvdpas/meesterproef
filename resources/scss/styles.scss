@@ -18,6 +18,7 @@ html, body {
 body {
   width: 55em;
   margin: 0 auto;
+  padding: 0 1em;
 }
 
 img {
@@ -53,7 +54,6 @@ a {
   }
 }
 
-
 // interest blocks
 #interests {
   ul {
@@ -67,6 +67,13 @@ a {
       list-style: none;
       border: 1px solid #333;
       text-align: center;
+
+      label {
+        padding: 2em 0;
+        box-sizing: border-box;
+        display: block;
+        width: 12em;
+      }
 
       input[type='checkbox'] {
         position: absolute;
@@ -157,15 +164,6 @@ input[type=button] {
     background: #ff6900;
     color: #fff;
     transition: .5s ease background;
-  }
-}
-
-.checkboxWrapper {
-  label {
-    padding: 2em 0;
-    box-sizing: border-box;
-    display: block;
-    width: 12em;
   }
 }
 
