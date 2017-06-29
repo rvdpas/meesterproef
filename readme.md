@@ -19,7 +19,7 @@ Gebruik gemaakt van moderne technieken als flexbox. Ik had nog willen experiment
 - Performance matters
 De pagina is geoptimaliseerd door het gebruik van g-zip. Ik had graag lazy loading willen toepassen, maar de content die ik momenteel heb is statisch en dus altijd hetzelfde.
 
--Real-time web
+- Real-time web
 Ik heb geprobeerd de suggesties real-time te maken, maar heb dit helaas niet helemaal kunnen afronden zoals ik het wilde. Ik had ook graag de likes real-time gemaakt. Momenteel wordt het opgeslagen in localstorage ipv een database.
 
 ## Getting Started
