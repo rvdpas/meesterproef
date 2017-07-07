@@ -30,7 +30,6 @@ To get this application working on your system, please follow the steps as descr
 
 ```
 - Installed node  
-- A code editor  
 ```
 
 ### Installing

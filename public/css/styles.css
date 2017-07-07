@@ -49,13 +49,17 @@ a {
   margin-bottom: 1em; }
   #interests ul li {
     list-style: none;
-    border: 1px solid #333;
     text-align: center; }
+    #interests ul li:hover {
+      background-color: #ff6900;
+      opacity: 0.7;
+      color: #fff; }
     #interests ul li label {
       padding: 2em 0;
       box-sizing: border-box;
       display: block;
-      width: 12em; }
+      width: 12em;
+      border: 1px solid #333; }
     #interests ul li input[type='checkbox'] {
       position: absolute;
       top: -99999px;
@@ -64,6 +68,8 @@ a {
         background-color: #ff6900;
         opacity: 0.7;
         color: #fff; }
+      #interests ul li input[type='checkbox']:focus + label {
+        border: 3px solid #ff6900; }
   #interests ul a {
     text-decoration: none;
     display: block;

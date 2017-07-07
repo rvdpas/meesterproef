@@ -36,6 +36,7 @@ app.get('/:id', function(req, res){
       return val.id === id;
   })[0];
   res.render('detail.ejs', {article: articles});
+  console.log(articles);
 });
 
 // Start socket connection to send data between the client and server
