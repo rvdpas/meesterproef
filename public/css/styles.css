@@ -2,20 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+  *:focus {
+    border: 3px solid #ff6900;
+    outline: none; }
+
+html {
+  height: 100%; }
 
 html, body {
   width: 100%;
-  height: 100%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #333;
   line-height: 1.8;
   font-size: 18px; }
 
-body {
+.contentWrapper {
   width: 55em;
   margin: 0 auto;
   padding: 0 1em; }
+  @media (max-width: 65em) {
+    .contentWrapper {
+      width: 100%; } }
 
 img {
   width: 100%;
@@ -40,6 +48,15 @@ a {
     width: 30%;
     display: block;
     margin: 0 auto; }
+    @media (max-width: 40em) {
+      .top .image-wrapper {
+        width: 60%; } }
+    @media (max-width: 30em) {
+      .top .image-wrapper {
+        width: 80%; } }
+    @media (max-width: 20em) {
+      .top .image-wrapper {
+        width: 100%; } }
 
 #interests ul {
   display: flex;
@@ -140,8 +157,11 @@ input[type=button] {
   display: block; }
 
 .detail {
-  width: 40em;
   margin: 0 auto 2em auto; }
+  @media (max-width: 35em) {
+    .detail article h1 {
+      font-size: 1.8em;
+      line-height: 1.2em; } }
   .detail article img {
     margin-bottom: 1em; }
   .detail article blockquote {
@@ -156,14 +176,33 @@ input[type=button] {
     color: #fff;
     padding: 1.3em;
     margin-bottom: 1em; }
-    .detail article .cta div {
+    @media (max-width: 40em) {
+      .detail article .cta {
+        width: 100%;
+        text-align: center; } }
+    .detail article .cta > h3 {
       display: inline-block;
       font-size: 1.1em;
       line-height: 43px; }
-    .detail article .cta input {
-      float: right;
-      color: #fff; }
-    .detail article .cta .dislikeArticle {
+      @media (max-width: 40em) {
+        .detail article .cta > h3 {
+          line-height: 1.2em;
+          margin-bottom: 1em; } }
+    .detail article .cta .likeWrapper {
+      float: right; }
+      @media (max-width: 40em) {
+        .detail article .cta .likeWrapper {
+          float: none; } }
+      .detail article .cta .likeWrapper input {
+        float: left;
+        color: #fff; }
+        @media (max-width: 40em) {
+          .detail article .cta .likeWrapper input {
+            float: none; } }
+        .detail article .cta .likeWrapper input:focus {
+          border: 3px solid #ff6900;
+          outline: none; }
+    .detail article .cta .likeArticle {
       margin-right: 1em; }
   .detail article .cta-like input {
     width: 7em; }

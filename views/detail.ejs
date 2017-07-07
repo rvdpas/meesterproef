@@ -2,8 +2,8 @@
 
     <% include partials/global/top.ejs %>
     <main class="detail">
-        <article>
-            <h1 class="title"><%= article.storyTitle %></h1>
+        <article tabindex="2">
+            <h1 tabindex="3" class="title"><%= article.storyTitle %></h1>
             <div class="iconWrapper">
                 <div class="icon">
                     <i class="fa fa-heart like" aria-hidden="true"></i><span class="amountOfLikes">0 Likes</span>
@@ -16,29 +16,22 @@
                 </div>
             </div>
             <img class="image" src="<%= article.image %>">
-            <p><%= article.storyTextPart1 %></p>
-            <section class="cta">
-                <div>Moeten anderen dit ook lezen?</div>
-                <input class="readLater" type="button" name="like" value="Iedereen moet dit lezen!">
-            </section>
-            <p><%= article.storyTextPart2 %></p>
-            <blockquote><%= article.storyQuote %></blockquote>
-            <p><%= article.storyTextPart3 %></p>
-            <p><%= article.storyTextPart4 %></p>
-            <p><%= article.storyTextPart5 %></p>
+            <p tabindex="4"><%= article.storyTextPart1 %></p>
+            <p tabindex="5"><%= article.storyTextPart2 %></p>
+            <blockquote tabindex="6"><%= article.storyQuote %></blockquote>
+            <p tabindex="7"><%= article.storyTextPart3 %></p>
+            <p tabindex="8"><%= article.storyTextPart4 %></p>
+            <p tabindex="9"><%= article.storyTextPart5 %></p>
             <p class="hide link"><%= article.id %></p>
 
             <section class="cta cta-like">
-                <div>Wat vond je van dit artikel?</div>
-                <input type="button" class="likeArticle" value="Like">
-                <input type="button" class="dislikeArticle" value="Dislike">
+                <h3 tabindex="10">Wat vond je van dit artikel?</h3>
+                <div class="likeWrapper">
+                    <input tabindex="11" type="button" class="likeArticle" value="Like">
+                    <input tabindex="12" type="button" class="dislikeArticle" value="Dislike">
+                </div>
             </section>
         </article>
-
-        <section>
-            <h2 class="hide">Bekijk ook deze artikelen</h2>
-            <div class="suggest"></div>
-        </section>
     </main>
 
 <% include partials/global/footer.ejs %>

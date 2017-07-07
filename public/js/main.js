@@ -36,28 +36,6 @@ function showArticles() {
     });
   });
 }
-// Create a suggest list
-var title = document.querySelector('.title');
-var image = document.querySelector('.image');
-var link = document.querySelector('.link');
-var readLater = document.querySelector('.readLater');
-var suggest = document.querySelector('.suggest');
-var heading = document.getElementsByTagName('H2');
-
-readLater.addEventListener('click', function() {
-  socket.emit('suggest', {
-    title: title,
-    link: link,
-    image: image
-  });
-});
-
-socket.on('suggest', function(data) {
-  heading[0].classList.remove('hide');
-  link = link.innerHTML;
-  title = title.innerHTML;
-  suggest.innerHTML += '<a class="suggested" href="/' + link + '">' + '<h3>' + title + '</h3>' + image.outerHTML + '</a>';
-});
 
 // Save like and dislike to local storage
 var likes =  document.querySelector(".amountOfLikes");
