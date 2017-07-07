@@ -33,12 +33,12 @@ h1 {
   font-size: 2em;
   font-weight: 700;
   line-height: 1.4;
-  margin-bottom: 0.2em; }
+  margin-bottom: 0.2em;
+  text-align: center; }
   @media (max-width: 40em) {
     h1 {
       font-size: 1.8em;
-      line-height: 1.2em;
-      text-align: center; } }
+      line-height: 1.2em; } }
 
 li {
   list-style: none; }
@@ -47,26 +47,26 @@ a {
   text-decoration: none;
   color: inherit; }
 
-.top {
+#top {
   padding: 2em 0;
   border-bottom: 1px solid #cacaca;
   margin-bottom: 2em; }
-  .top::after {
+  #top::after {
     content: '';
     display: table;
     clear: both; }
-  .top .image-wrapper {
+  #top .image-wrapper {
     width: 30%;
     display: block;
     margin: 0 auto; }
     @media (max-width: 40em) {
-      .top .image-wrapper {
+      #top .image-wrapper {
         width: 60%; } }
     @media (max-width: 30em) {
-      .top .image-wrapper {
+      #top .image-wrapper {
         width: 80%; } }
     @media (max-width: 20em) {
-      .top .image-wrapper {
+      #top .image-wrapper {
         width: 100%; } }
 
 #interests ul {
@@ -103,10 +103,10 @@ a {
       display: block;
       width: 12em;
       border: 1px solid #333;
-      cursor: pointer;
-      margin: 0.5em; }
+      cursor: pointer; }
       @media (max-width: 62em) {
         #interests ul li label {
+          margin: 0.5em;
           width: 10em; } }
       @media (max-width: 55em) {
         #interests ul li label {
@@ -197,11 +197,18 @@ input[type=button] {
 .hide {
   display: none; }
 
+.changeColor {
+  color: #f00;
+  -webkit-transition-duration: 0.3s;
+  /* Safari */
+  transition-duration: 0.3s; }
+
 .show {
   display: block; }
 
 .detail {
-  margin: 0 auto 2em auto; }
+  margin: 0 auto 2em auto;
+  width: 40em; }
   .detail article img {
     margin-bottom: 1em; }
   .detail article blockquote {
@@ -240,8 +247,9 @@ input[type=button] {
           .detail article .cta .likeWrapper input {
             float: none; } }
         .detail article .cta .likeWrapper input:focus {
-          border: 3px solid #ff6900;
-          outline: none; }
+          background: #ff6900;
+          outline: none;
+          transform-origin: top; }
     .detail article .cta .likeArticle {
       margin-right: 1em; }
   .detail article .cta-like input {

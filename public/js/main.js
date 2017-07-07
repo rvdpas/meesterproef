@@ -38,12 +38,16 @@ function showArticles() {
 }
 
 // Save like and dislike to local storage
+var icon = document.querySelector(".like");
 var likes =  document.querySelector(".amountOfLikes");
 var dislikeButton = document.querySelector('.dislikeArticle').addEventListener("click", function() {
-  dislikeCounter();
+  scrollToTop();
+  setTimeout(dislikeCounter,700);
 });
+
 var likeButton = document.querySelector('.likeArticle').addEventListener("click", function() {
-  likeCounter();
+  scrollToTop();
+  setTimeout(likeCounter,700);
 });
 
 function likeCounter() {
@@ -55,6 +59,7 @@ function likeCounter() {
       }
       like = localStorage.clickcount;
   }
+  icon.classList.add('changeColor');
   likes.innerHTML = localStorage.clickcount + ' likes';
 }
 
@@ -68,4 +73,14 @@ function dislikeCounter() {
       like = localStorage.clickcount;
   }
   likes.innerHTML = localStorage.clickcount + ' likes';
+}
+
+// scroll to top when someone likes or dislikes the article
+var timeOut;
+function scrollToTop() {
+  if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
+    window.scrollBy(0,-50);
+    timeOut = setTimeout('scrollToTop()',20);
+  }
+  else clearTimeout(timeOut);
 }
