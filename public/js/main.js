@@ -40,15 +40,16 @@ function showArticles() {
 // Save like and dislike to local storage
 var icon = document.querySelector(".like");
 var likes =  document.querySelector(".amountOfLikes");
-var dislikeButton = document.querySelector('.dislikeArticle').addEventListener("click", function() {
-  scrollToTop();
-  setTimeout(dislikeCounter,700);
-});
+var dislikeButton = document.querySelector('.dislikeArticle');
+var likeButton = document.querySelector('.likeArticle');
 
-var likeButton = document.querySelector('.likeArticle').addEventListener("click", function() {
-  scrollToTop();
-  setTimeout(likeCounter,700);
-});
+// make sure the button isn't null
+if(dislikeButton || likeButton) {
+  addEventListener("click", function() {
+    scrollToTop();
+    setTimeout(dislikeCounter,700);
+  });
+}
 
 function likeCounter() {
   if (localStorage !== "undefined") {
