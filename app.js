@@ -39,14 +39,6 @@ app.get('/:id', function(req, res){
   console.log(articles);
 });
 
-// Start socket connection to send data between the client and server
-io.on('connection', function(socket) {
-  socket.on('suggest', function(data) {
-    io.sockets.emit("suggest", data);
-    console.log(data.title)
-  });
-});
-
 // Start server on port 3000
 server.listen(3000, function() {
   console.log("Server started on port 3000...");

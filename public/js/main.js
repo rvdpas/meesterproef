@@ -1,13 +1,45 @@
-// Declare socket variable
-var socket = io();
+// queryselector polyfill
+if (!document.querySelectorAll) {
+  document.querySelectorAll = function (selectors) {
+    var style = document.createElement('style'), elements = [], element;
+    document.documentElement.firstChild.appendChild(style);
+    document._qsa = [];
+
+    style.styleSheet.cssText = selectors + '{x-qsa:expression(document._qsa && document._qsa.push(this))}';
+    window.scrollBy(0, 0);
+    style.parentNode.removeChild(style);
+
+    while (document._qsa.length) {
+      element = document._qsa.shift();
+      element.style.removeAttribute('x-qsa');
+      elements.push(element);
+    }
+    document._qsa = null;
+    return elements;
+  };
+}
+
+if (!document.querySelector) {
+  document.querySelector = function (selectors) {
+    var elements = document.querySelectorAll(selectors);
+    return (elements.length) ? elements[0] : null;
+  };
+}
 
 // Toggle checkbox and show associated content
 var checkboxes = document.querySelectorAll('input[name="interest"]');
 var categories = [];
 
-checkboxes.forEach(function(el) {
-  el.addEventListener('change', showArticles);
-});
+// if AddEventListener isn't available fallback on attachEvent
+if(document.addEventListener) {
+  for (var i = 0; i<checkboxes.length; i++) {
+    checkboxes[i].addEventListener('change', showArticles);
+  }
+} else {
+  for (var i = 0; i<checkboxes.length; i++) {
+    checkboxes[i].attachEvent('change', showArticles);
+  }
+}
 
 // Show category articles
 function showArticles() {
@@ -43,37 +75,29 @@ var likes =  document.querySelector(".amountOfLikes");
 var dislikeButton = document.querySelector('.dislikeArticle');
 var likeButton = document.querySelector('.likeArticle');
 
-// make sure the button isn't null
-if(dislikeButton || likeButton) {
-  addEventListener("click", function() {
-    scrollToTop();
-    setTimeout(dislikeCounter,700);
-  });
+var liked = localStorage.getItem('liked'+likeButton.dataset.id);
+if (liked) {
+  likes.innerHTML = '1 like';
 }
 
-function likeCounter() {
-  if (localStorage !== "undefined") {
-      if (localStorage.clickcount) {
-          localStorage.clickcount = Number(localStorage.clickcount)+1;
-      } else {
-          localStorage.clickcount = 1;
-      }
-      like = localStorage.clickcount;
+function likeCounter(id) {
+  var liked = localStorage.getItem('liked'+id);
+  if (! liked) {
+    localStorage.setItem('liked'+id, true);
   }
+
   icon.classList.add('changeColor');
-  likes.innerHTML = localStorage.clickcount + ' likes';
+  likes.innerHTML = '1 like';
 }
 
-function dislikeCounter() {
-  if (localStorage !== "undefined") {
-      if (localStorage.clickcount) {
-          localStorage.clickcount = Number(localStorage.clickcount)-1;
-      } else {
-          localStorage.clickcount = -1;
-      }
-      like = localStorage.clickcount;
+function dislikeCounter(id) {
+  var liked = localStorage.getItem('liked'+id);
+  if (liked) {
+    localStorage.setItem('liked'+id, false);
   }
-  likes.innerHTML = localStorage.clickcount + ' likes';
+
+  icon.classList.add('changeColor');
+  likes.innerHTML = '0 likes';
 }
 
 // scroll to top when someone likes or dislikes the article
@@ -84,4 +108,27 @@ function scrollToTop() {
     timeOut = setTimeout('scrollToTop()',20);
   }
   else clearTimeout(timeOut);
+}
+
+// make sure the button isn't null
+if(dislikeButton || likeButton) {
+  dislikeButton.addEventListener("click", function() {
+    var button = this;
+
+    scrollToTop();
+    setTimeout(function() {
+      dislikeCounter(button.dataset.id);
+    },700);
+  });
+
+  if(document.addEventListener) {
+    likeButton.addEventListener("click", function() {
+      var button = this;
+
+      scrollToTop();
+      setTimeout(function() {
+        likeCounter(button.dataset.id);
+      },700);
+    });
+  }
 }

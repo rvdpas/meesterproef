@@ -40,6 +40,9 @@ h1 {
       font-size: 1.8em;
       line-height: 1.2em; } }
 
+h2 {
+  line-height: 1.6; }
+
 li {
   list-style: none; }
 
@@ -86,7 +89,8 @@ a {
   #interests ul li {
     list-style: none;
     text-align: center;
-    margin-top: 1em; }
+    margin-top: 1em;
+    position: relative; }
     @media (max-width: 50em) {
       #interests ul li:nth-child(odd) {
         margin-right: 1em; } }
@@ -115,8 +119,9 @@ a {
           width: 100%; } }
     #interests ul li input[type='checkbox'] {
       position: absolute;
-      top: -99999px;
-      left: -99999px; }
+      top: 0;
+      left: 0;
+      opacity: 0; }
       #interests ul li input[type='checkbox']:checked + label {
         color: #fff;
         opacity: 0.7;
@@ -257,3 +262,14 @@ input[type=button] {
   margin: 0 5% 5% 0; }
   .suggested:nth-of-type(even) {
     margin-right: 0; }
+
+.backToHome {
+  border: 1px solid #333;
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 0.5em; }
+  .backToHome:hover {
+    background: #ff6900;
+    color: #fff; }

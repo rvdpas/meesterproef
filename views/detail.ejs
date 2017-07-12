@@ -3,6 +3,7 @@
     <% include partials/global/top.ejs %>
     <main class="detail">
         <article tabindex="2">
+        <a class="backToHome" href="/" title="back to home">Terug naar home</a>
             <h1 tabindex="3" class="title"><%= article.storyTitle %></h1>
             <div class="iconWrapper">
                 <div class="icon">
@@ -27,8 +28,8 @@
             <section class="cta cta-like">
                 <h3 tabindex="10">Wat vond je van dit artikel?</h3>
                 <div class="likeWrapper">
-                    <input tabindex="11" type="button" class="likeArticle" value="Like">
-                    <input tabindex="12" type="button" class="dislikeArticle" value="Dislike">
+                    <input tabindex="11" type="button" class="likeArticle" value="Like" data-id="<%= article.id %>">
+                    <input tabindex="12" type="button" class="dislikeArticle" value="Dislike" data-id="<%= article.id %>">
                 </div>
             </section>
         </article>

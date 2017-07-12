@@ -51,6 +51,10 @@ h1 {
   }
 }
 
+h2 {
+  line-height: 1.6;
+}
+
 li {
   list-style: none;
 }
@@ -114,6 +118,7 @@ a {
       list-style: none;
       text-align: center;
       margin-top: 1em;
+      position: relative;
 
       &:nth-child(odd) {
         @media (max-width: 50em) {
@@ -153,8 +158,9 @@ a {
 
       input[type='checkbox'] {
         position: absolute;
-        top: -99999px;
-        left: -99999px;
+        top: 0;
+        left: 0;
+        opacity: 0;
 
         &:checked + label {
           color: #fff;
@@ -366,5 +372,19 @@ input[type=button] {
 
   &:nth-of-type(even) {
     margin-right: 0;
+  }
+}
+
+.backToHome {
+  border: 1px solid #333;
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 0.5em;
+
+  &:hover {
+    background: #ff6900;
+    color: #fff;
   }
 }
