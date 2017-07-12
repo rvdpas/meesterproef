@@ -132,3 +132,34 @@ if(dislikeButton || likeButton) {
     });
   }
 }
+
+
+var socket = io();
+var message = document.querySelector('#send');
+var sendMessage = document.querySelector('#sendform');
+
+socket.on('new message', newMsg);
+sendMessage.addEventListener('submit', sendMsg);
+
+function sendMsg(e) {
+  socket.emit('send message', message.value);
+  message.value = '';
+  e.preventDefault();
+}
+
+function newMsg(data) {
+  var li = document.createElement('li');
+  var error = document.createElement('li');
+  var errorMessage = "Vul een bericht in";
+  li.className = "message";
+  error.className = "error";
+  error.innerHTML = errorMessage;
+  li.innerHTML = data.msg;
+
+  if(li.innerHTML < 1) {
+    var errorMsg = error.innerHTML;
+    document.querySelector('#messages').appendChild(error);
+  } else {
+    document.querySelector('#messages').appendChild(li);
+  }
+}

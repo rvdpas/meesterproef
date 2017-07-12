@@ -17,6 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Save json file in a variable
 var storydata = require('./stories.json');
+users = [];
+connections = [];
 
 // Compression
 app.use(compression({
@@ -37,6 +39,28 @@ app.get('/:id', function(req, res){
   })[0];
   res.render('detail.ejs', {article: articles});
   console.log(articles);
+});
+
+// Start socket connection to send data between the client and server
+io.sockets.on('connection', function(socket) {
+  connections.push(socket);
+  console.log('Connected: %s sockets connected', connections.length);
+
+  // Disconnect
+  socket.on('disconnect', function(data) {
+    users.splice(users.indexOf(socket.username), 1);
+
+    connections.splice(connections.indexOf(socket), 1);
+    console.log('Disconnected: %s sockets connected', connections.length);
+  });
+
+  // Send message
+  socket.on('send message', function(data) {
+    io.sockets.emit('new message', {
+      msg: data,
+    });
+    console.log(data);
+  });
 });
 
 // Start server on port 3000

@@ -209,6 +209,9 @@ input[type=button] {
 .detail {
   margin: 0 auto 2em auto;
   width: 40em; }
+  @media (max-width: 65em) {
+    .detail {
+      width: 100%; } }
   .detail article img {
     margin-bottom: 1em; }
   .detail article blockquote {
@@ -269,7 +272,52 @@ input[type=button] {
   position: absolute;
   top: 20px;
   left: 20px;
-  padding: 0.5em; }
+  padding: 0.5em;
+  width: auto; }
+  @media (max-width: 41em) {
+    .backToHome {
+      position: static;
+      top: auto;
+      left: auto;
+      display: inline-block;
+      margin-bottom: 2em; } }
   .backToHome:hover {
     background: #ff6900;
     color: #fff; }
+
+.comments {
+  overflow-y: hidden; }
+
+.comments input {
+  border: 1px solid #a3a3a3;
+  padding: 2.5em;
+  width: 100%; }
+
+.comments input[type="submit"] {
+  padding: 1em;
+  border: 1px solid #000;
+  background: #fff;
+  margin: 20px 0;
+  width: 20%; }
+  @media (max-width: 30em) {
+    .comments input[type="submit"] {
+      width: 100%; } }
+  .comments input[type="submit"]:hover {
+    background: #333;
+    color: #fff; }
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-y: auto; }
+
+#messages li {
+  padding: 1em 2em;
+  background: #e8e8e8;
+  margin-bottom: 1em;
+  color: #333; }
+
+.error {
+  border: 1px solid red !important; }
