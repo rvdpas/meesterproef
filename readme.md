@@ -7,20 +7,23 @@ De Persgroep is a leading publisher of national, regional and local news brands,
 [live](http://4d2a9661.ngrok.io/) 
 
 ## Concept
-The concept is to involve younger to people to create news that they think is important. Yonger people know what they like and what they don't like. This way they are their own target audience. In the application you can add topics that you are interested in. After you've selected them, content will appear with that topic. Users can see how the aricle is doing by the amount of likes that it has. They have the ability to read the news, by going to the detail page. Here they like the article and suggest it to other readers. If an article gets recommended a lot it will appear on the other users page.
+The concept is to involve younger to people to create news that they think is important. Yonger people know what they like and what they don't like. This way they are their own target audience. In the application you can add topics that you are interested in. After you've selected them, content will appear with that topic. Users can see how the aricle is doing by the amount of likes that it has. They have the ability to read the news, by going to the detail page. This is were they can like the artikel and place a comment of their opinion.
 
 ## Vakken voor de beordeling
 - Web App From Scratch 
-Ik heb de applicatie zoveel mogelijk als een web app geprobeerd te bouwen, zodat er zo min mogelijk pagina's zijn. Ik had mijn code nog object oriented willen schrijven.
+It is a 2 page application, if i'm refactoring my code i'll write it object oriented. It is more clear to read.
 
 - Css To The Rescue
-Gebruik gemaakt van moderne technieken als flexbox. Ik had nog willen experimenteren met Css grids en variables
+I've used type selectors, flexbox layout. If i had more content i've could have done more with the CSS techniques i've learned during the class CSS To The Resque.
 
 - Performance matters
-De pagina is geoptimaliseerd door het gebruik van g-zip. Ik had graag lazy loading willen toepassen, maar de content die ik momenteel heb is statisch en dus altijd hetzelfde.
+The application is g-zipped which speeds up the application by a lot. I would like to add a lazy loading effect when there is more content. At the moment there are only a few static articles, which i've added myself.
 
 - Real-time web
-Ik heb geprobeerd de suggesties real-time te maken, maar heb dit helaas niet helemaal kunnen afronden zoals ik het wilde. Ik had ook graag de likes real-time gemaakt. Momenteel wordt het opgeslagen in localstorage ipv een database.
+Real-time comments is added to the detail page. It doens't work 100% and I would have liked to add usersnames to the ones who comment, but I couldn't get the data in time in a database.
+
+- Browser technologie 
+I've added a few feature detections to make sure some of the used technologies work.
 
 ## Getting Started
 
@@ -29,7 +32,7 @@ To get this application working on your system, please follow the steps as descr
 ### Prerequisites
 
 ```
-- Installed node  
+- Installed node version 5+ 
 ```
 
 ### Installing
@@ -78,10 +81,10 @@ localhost:3000
 ### Could
 - [ ] Add share to social media functionality
 - [ ] login form with validation
-- [ ] Comment on the article
+- [x] Comment on the article
 - [ ] Rate the comments on the article
-- [ ] Real-time comments
+- [x] Real-time comments
 
-## Planning
 
-[Trello](https://trello.com/b/lavTOTYF) 
+## Planning 
+![Trello planning](https://github.com/rvdpas/meesterproef/blob/master/public/img/trello-planning.png)
