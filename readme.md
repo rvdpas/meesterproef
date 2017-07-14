@@ -88,3 +88,7 @@ localhost:3000
 
 ## Planning 
 ![Trello planning](https://github.com/rvdpas/meesterproef/blob/master/public/img/trello-planning.png)
+
+
+### Sources     
+* [Queryselector fallback](https://gist.github.com/chrisjlee/8960575) 

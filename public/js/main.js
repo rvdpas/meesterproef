@@ -1,4 +1,4 @@
-// queryselector polyfill
+// queryselector polyfill (https://gist.github.com/chrisjlee/8960575)
 if (!document.querySelectorAll) {
   document.querySelectorAll = function (selectors) {
     var style = document.createElement('style'), elements = [], element;
